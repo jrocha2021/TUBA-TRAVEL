@@ -12,7 +12,6 @@ type ContactPageProps = {
 export default function ContactPage({ params }: ContactPageProps) {
   const messages = getMessages(params.locale);
   const { contact } = messages;
-  const whatsappUrl = `https://wa.me/${contact.whatsapp.phone.replace(/\D/g, "")}`;
   const emailUrl = `mailto:${contact.email.address}`;
 
   return (
@@ -53,25 +52,6 @@ export default function ContactPage({ params }: ContactPageProps) {
           </div>
 
           <div className="grid gap-6">
-            <article className="soft-panel p-6">
-              <p className="text-sm uppercase tracking-[0.24em] text-sun">WhatsApp</p>
-              <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink">
-                {contact.whatsapp.title}
-              </h2>
-              <p className="mt-3 text-base leading-7 text-ink/75">
-                {contact.whatsapp.description}
-              </p>
-              <p className="mt-4 text-sm font-medium text-ink">{contact.whatsapp.phone}</p>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex rounded-full bg-ocean px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-ocean/20 hover:bg-ocean/90"
-              >
-                {contact.whatsapp.button}
-              </a>
-            </article>
-
             <article className="soft-panel p-6">
               <p className="text-sm uppercase tracking-[0.24em] text-sun">Email</p>
               <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink">
