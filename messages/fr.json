@@ -1,0 +1,257 @@
+{
+  "brand": {
+    "name": "Tuba Travel",
+    "location": "Cap-Vert"
+  },
+  "nav": {
+    "home": "Accueil",
+    "destinations": "Destinations",
+    "experiences": "Expériences",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Des voyages au Cap-Vert pensés avec chaleur, élégance et regard local.",
+    "rights": "Tous droits réservés."
+  },
+  "common": {
+    "explore": "Explorer le Cap-Vert",
+    "learnMore": "En savoir plus"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Le Cap-Vert, révélé avec soin",
+      "title": "Voyagez au Cap-Vert avec chaleur, élégance et confiance dès le premier instant",
+      "description": "Tuba Travel s'adresse aux voyageurs qui recherchent plus qu'une simple information. Nous réunissons connaissance locale, expériences mémorables et clarté haut de gamme pour que chaque projet commence avec sérénité.",
+      "primaryAction": "Trouver votre île",
+      "secondaryAction": "Planifier vos expériences",
+      "highlights": [
+        "Un regard local avec une touche premium",
+        "Un accompagnement multilingue et humain",
+        "Une expérience claire, de l'inspiration à la demande"
+      ]
+    },
+    "destinations": {
+      "eyebrow": "Destinations en lumière",
+      "title": "Choisissez l'île qui correspond à votre manière de voyager",
+      "description": "Entre douceur balnéaire, richesse culturelle et paysages grandioses, Tuba Travel aide chaque voyageur à identifier l'île qui lui convient vraiment.",
+      "items": [
+        {
+          "title": "Sal",
+          "description": "Idéal pour les séjours plage, la lumière, la mer et une atmosphère paisible où l'on ralentit naturellement.",
+          "tag": "Littoral et douceur"
+        },
+        {
+          "title": "Santiago",
+          "description": "Parfait pour les voyageurs attirés par l'histoire, la musique, la culture et une immersion plus profonde dans la vie locale.",
+          "tag": "Culture et profondeur"
+        },
+        {
+          "title": "Santo Antao",
+          "description": "Pensé pour celles et ceux qui cherchent grands paysages, air pur et découvertes inoubliables en pleine nature.",
+          "tag": "Nature et émotion"
+        }
+      ]
+    },
+    "experiences": {
+      "eyebrow": "Expériences en vedette",
+      "title": "Des expériences pensées pour rendre votre voyage plus fluide et plus mémorable",
+      "description": "Nos expériences sont conçues pour vous faire vivre le Cap-Vert avec plus d'aisance, plus de profondeur et davantage de moments qui restent.",
+      "items": [
+        {
+          "title": "Sorties en mer",
+          "description": "Des journées en bateau et des instants au large pour ceux qui recherchent air marin, vues ouvertes et sensation d'évasion.",
+          "tag": "Océan"
+        },
+        {
+          "title": "Rencontres culturelles",
+          "description": "Musique, gastronomie, quartiers et histoires locales pour découvrir les îles avec plus de vérité.",
+          "tag": "Culture locale"
+        },
+        {
+          "title": "Aventures panoramiques",
+          "description": "Des itinéraires et découvertes en plein air pour les voyageurs qui aiment mouvement, perspective et beauté naturelle.",
+          "tag": "Aventure"
+        }
+      ]
+    },
+    "whyChooseUs": {
+      "eyebrow": "Pourquoi nous choisir",
+      "title": "Une marque de voyage pensée pour rassurer, inspirer et accompagner avec élégance",
+      "description": "Tuba Travel est conçu pour rendre la préparation du voyage plus simple, plus humaine et plus rassurante dès le premier échange.",
+      "items": [
+        {
+          "title": "Une expérience multilingue fluide",
+          "description": "Les voyageurs peuvent avancer en anglais, en français ou en portugais avec la même clarté et la même qualité."
+        },
+        {
+          "title": "Une structure pensée pour de vraies décisions de voyage",
+          "description": "Destinations, services et demandes sont organisés selon la manière dont les voyageurs choisissent réellement leur séjour."
+        },
+        {
+          "title": "Une base solide pour évoluer",
+          "description": "La plateforme est prête à grandir vers des guides plus riches, des services plus avancés et des parcours plus complets."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Planifier avec confiance",
+      "title": "Prêt à passer à l'étape suivante pour votre voyage au Cap-Vert ?",
+      "description": "Laissez Tuba Travel transformer une première envie en prochaine étape claire, accueillante et bien accompagnée.",
+      "primaryAction": "Commencer votre demande",
+      "secondaryAction": "Découvrir notre histoire"
+    }
+  },
+  "destinations": {
+    "intro": {
+      "eyebrow": "Destinations",
+      "title": "Trouvez l'île qui correspond vraiment à votre voyage",
+      "description": "Chaque île offre un rythme, une atmosphère et une énergie différente. Tuba Travel vous aide à comparer plus clairement pour choisir avec confiance."
+    },
+    "cards": [
+      {
+        "title": "Santiago",
+        "description": "Un choix fort pour les voyageurs qui recherchent histoire, musique, saveurs locales et une relation plus profonde avec la culture capverdienne.",
+        "tag": "Patrimoine et vie locale"
+      },
+      {
+        "title": "Sal",
+        "description": "Une destination côtière lumineuse pour ceux qui aiment la plage, les séjours détendus et la simplicité du temps insulaire.",
+        "tag": "Soleil et rivage"
+      },
+      {
+        "title": "São Vicente",
+        "description": "Une île vibrante, créative et expressive, reconnue pour son caractère, son charme maritime et son énergie urbaine.",
+        "tag": "Culture et caractère"
+      }
+    ],
+    "exploreButton": "Découvrir les expériences liées"
+  },
+  "experiences": {
+    "intro": {
+      "eyebrow": "Expériences",
+      "title": "Choisissez les services et expériences qui conviennent le mieux à votre séjour",
+      "description": "Découverte des îles, immersion culturelle, logistique fluide ou accompagnement sur mesure: Tuba Travel vous aide à construire un voyage avec un soutien local attentif."
+    },
+    "cards": [
+      {
+        "title": "Circuits dans les îles",
+        "description": "Des expériences guidées pour découvrir l'essentiel de chaque île et profiter au mieux du temps sur place.",
+        "tag": "Découverte"
+      },
+      {
+        "title": "Expériences culturelles",
+        "description": "Des moments choisis pour vous rapprocher de la musique, de la gastronomie, du patrimoine et de la vie locale.",
+        "tag": "Culture"
+      },
+      {
+        "title": "Transferts aéroport",
+        "description": "Un service fiable pour des arrivées plus fluides, des départs plus sereins et moins de stress dans les déplacements.",
+        "tag": "Confort"
+      },
+      {
+        "title": "Planification personnalisée",
+        "description": "Un accompagnement sur mesure pour les voyageurs qui souhaitent un itinéraire plus fluide et mieux structuré.",
+        "tag": "Organisation"
+      }
+    ],
+    "ctaButton": "Demander ce service"
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "À propos de Tuba Travel",
+      "title": "Une marque de voyage créée pour présenter le Cap-Vert avec chaleur, confiance et élégance discrète",
+      "description": "Tuba Travel se construit comme une plateforme touristique multilingue qui aide les visiteurs à découvrir le Cap-Vert grâce à une information claire, un regard local et une sensation d'accompagnement plus humaine.",
+      "highlights": [
+        "Ancré dans une vraie connaissance des destinations",
+        "Pensé pour des voyageurs internationaux",
+        "Premium dans la forme, chaleureux dans le ton"
+      ]
+    },
+    "whoWeAre": {
+      "title": "Qui nous sommes",
+      "description": "Tuba Travel est une jeune marque touristique qui cherche à rendre le Cap-Vert plus lisible, plus inspirant et mieux présenté en ligne. Nous croyons qu'un voyage se prépare mieux lorsqu'il rassure autant qu'il fait rêver."
+    },
+    "vision": {
+      "title": "Notre vision",
+      "description": "Notre ambition est de créer une entrée plus raffinée et plus accueillante vers le Cap-Vert, où la curiosité du voyageur se transforme naturellement en confiance."
+    },
+    "approach": {
+      "title": "Notre approche",
+      "description": "Nous réunissons clarté, sensibilité locale et simplicité élégante. Cela se traduit par un contenu multilingue, une structure propre et des points de contact pensés pour guider sans alourdir."
+    },
+    "whyTravelWithUs": {
+      "title": "Pourquoi voyager avec Tuba Travel",
+      "description": "Parce qu'un voyage commence bien avant l'arrivée. Tuba Travel veut faire de ce premier moment un espace plus fluide, plus fiable et plus fidèle à l'esprit du Cap-Vert."
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Dites-nous quel voyage au Cap-Vert vous imaginez",
+      "description": "Que vous sachiez déjà quelle île choisir ou que vous soyez encore en phase d'exploration, nous sommes là pour vous aider à avancer avec clarté, chaleur et compréhension locale.",
+      "trustMessage": "Chaque demande est accueillie avec attention, clarté et un vrai sens du détail pour le voyage que vous préparez."
+    },
+    "whatsapp": {
+      "title": "Vous préférez commencer sur WhatsApp ?",
+      "description": "Pour une première question, une idée de séjour ou un échange plus direct, WhatsApp est souvent la manière la plus simple de débuter.",
+      "button": "Échanger sur WhatsApp",
+      "phone": "+238 991 00 00"
+    },
+    "email": {
+      "title": "Vous préférez écrire par email ?",
+      "description": "Partagez vos idées de voyage, votre destination envisagée ou vos besoins, et nous poursuivrons l'échange avec attention.",
+      "button": "Envoyer un email à Tuba Travel",
+      "address": "hello@tubatravel.com"
+    },
+    "form": {
+      "title": "Commencez à planifier votre voyage avec nous",
+      "description": "Partagez quelques détails sur votre séjour afin que nous puissions vous répondre d'une manière plus utile, plus ciblée et plus simple à concrétiser.",
+      "submitButton": "Envoyer ma demande",
+      "submittingButton": "Envoi...",
+      "successTitle": "Votre demande a bien été reçue",
+      "successDescription": "Merci d'avoir contacté Tuba Travel. Nous avons bien reçu vos informations et reviendrons vers vous dès que possible.",
+      "resetButton": "Envoyer une autre demande",
+      "errorMessage": "Nous n'avons pas pu envoyer votre demande pour le moment. Veuillez réessayer dans un instant ou nous contacter par WhatsApp ou par email.",
+      "validation": {
+        "required": "Ce champ est obligatoire.",
+        "invalidEmail": "Veuillez saisir une adresse email valide.",
+        "invalidWhatsappNumber": "Veuillez saisir un numéro WhatsApp valide."
+      },
+      "fields": {
+        "fullName": {
+          "label": "Nom complet",
+          "placeholder": "Votre nom complet"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Votre adresse email"
+        },
+        "whatsappNumber": {
+          "label": "Numéro WhatsApp",
+          "placeholder": "Votre numéro WhatsApp"
+        },
+        "preferredDestination": {
+          "label": "Destination souhaitée",
+          "placeholder": "Quelle île ou destination vous attire le plus ?"
+        },
+        "serviceInterestedIn": {
+          "label": "Service recherché",
+          "placeholder": "Circuits, transferts, planification ou autre service"
+        },
+        "travelDate": {
+          "label": "Date de voyage",
+          "placeholder": ""
+        },
+        "numberOfTravelers": {
+          "label": "Nombre de voyageurs",
+          "placeholder": "Combien de voyageurs composent votre groupe ?"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Parlez-nous de vos envies, de vos besoins ou de vos questions"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "brand": {
+    "name": "Tuba Travel",
+    "location": "Cabo Verde"
+  },
+  "nav": {
+    "home": "Início",
+    "destinations": "Destinos",
+    "experiences": "Experiências",
+    "about": "Sobre",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "tagline": "Viagens em Cabo Verde pensadas com acolhimento, elegância e sensibilidade local.",
+    "rights": "Todos os direitos reservados."
+  },
+  "common": {
+    "explore": "Explorar Cabo Verde",
+    "learnMore": "Saber mais"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Cabo Verde, revelado com cuidado",
+      "title": "Viaje por Cabo Verde com acolhimento, elegância e confiança desde o primeiro momento",
+      "description": "A Tuba Travel foi pensada para viajantes que procuram mais do que informação. Reunimos conhecimento local, experiências memoráveis e uma presença premium e tranquila para que cada viagem comece com clareza.",
+      "primaryAction": "Encontrar a sua ilha",
+      "secondaryAction": "Planear experiências",
+      "highlights": [
+        "Perspetiva local com toque premium",
+        "Acompanhamento multilingue e próximo",
+        "Clareza desde a inspiração até ao contacto"
+      ]
+    },
+    "destinations": {
+      "eyebrow": "Destinos em destaque",
+      "title": "Escolha a ilha que melhor combina com a viagem que procura",
+      "description": "Entre descanso à beira-mar, profundidade cultural e paisagens marcantes, a Tuba Travel ajuda cada viajante a encontrar a ilha certa para o seu ritmo e estilo.",
+      "items": [
+        {
+          "title": "Sal",
+          "description": "Ideal para estadias de praia, sol, mar e um ambiente leve que convida a abrandar.",
+          "tag": "Costa e leveza"
+        },
+        {
+          "title": "Santiago",
+          "description": "Perfeita para viajantes que procuram história, música, cultura e uma ligação mais próxima à vida local.",
+          "tag": "Cultura e profundidade"
+        },
+        {
+          "title": "Santo Antao",
+          "description": "Pensada para quem se sente atraído por paisagens de montanha, ar puro e descobertas inesquecíveis na natureza.",
+          "tag": "Natureza e encanto"
+        }
+      ]
+    },
+    "experiences": {
+      "eyebrow": "Experiências em destaque",
+      "title": "Experiências pensadas para tornar a viagem mais simples e memorável",
+      "description": "As nossas experiências foram criadas para ajudar o viajante a viver Cabo Verde com mais facilidade, mais profundidade e mais momentos que ficam na memória.",
+      "items": [
+        {
+          "title": "Momentos no mar",
+          "description": "Passeios de barco e momentos costeiros para quem procura ar livre, horizontes abertos e sensação de evasão.",
+          "tag": "Oceano"
+        },
+        {
+          "title": "Encontros culturais",
+          "description": "Música, gastronomia, bairros e histórias locais para descobrir as ilhas com maior verdade e proximidade.",
+          "tag": "Cultura local"
+        },
+        {
+          "title": "Descobertas panorâmicas",
+          "description": "Trilhos e experiências ao ar livre para viajantes que gostam de movimento, perspetiva e beleza natural.",
+          "tag": "Aventura"
+        }
+      ]
+    },
+    "whyChooseUs": {
+      "eyebrow": "Por que escolher-nos",
+      "title": "Uma marca de viagens pensada para inspirar confiança, proximidade e elegância",
+      "description": "A Tuba Travel está a ser construída para tornar o planeamento da viagem mais simples, mais humano e mais tranquilizador desde o primeiro contacto.",
+      "items": [
+        {
+          "title": "Experiência multilingue fluida",
+          "description": "Os viajantes podem navegar em inglês, francês ou português com a mesma clareza e consistência."
+        },
+        {
+          "title": "Estrutura pensada para decisões reais de viagem",
+          "description": "Destinos, serviços e pedidos estão organizados de acordo com a forma como os viajantes realmente escolhem e planeiam."
+        },
+        {
+          "title": "Base sólida para crescer",
+          "description": "A plataforma está preparada para evoluir para guias mais ricos, serviços mais completos e experiências mais prontas para reserva."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Planeie com confiança",
+      "title": "Pronto para dar o próximo passo para Cabo Verde?",
+      "description": "Deixe a Tuba Travel transformar a sua primeira intenção numa próxima etapa clara, acolhedora e bem orientada.",
+      "primaryAction": "Começar o pedido",
+      "secondaryAction": "Conhecer a nossa história"
+    }
+  },
+  "destinations": {
+    "intro": {
+      "eyebrow": "Destinos",
+      "title": "Encontre a experiência de ilha certa para si",
+      "description": "Cada ilha tem um ritmo, uma atmosfera e uma identidade próprios. A Tuba Travel ajuda a comparar com mais clareza para escolher com confiança."
+    },
+    "cards": [
+      {
+        "title": "Santiago",
+        "description": "Uma escolha forte para viajantes que procuram história, música, sabores locais e uma ligação mais profunda à cultura cabo-verdiana.",
+        "tag": "Património e vida local"
+      },
+      {
+        "title": "Sal",
+        "description": "Um destino costeiro luminoso para quem gosta de praia, estadias descontraídas e tempo de ilha sem pressa.",
+        "tag": "Sol e costa"
+      },
+      {
+        "title": "São Vicente",
+        "description": "Uma ilha vibrante, criativa e expressiva, conhecida pelo carácter, charme marítimo e energia urbana.",
+        "tag": "Cultura e carácter"
+      }
+    ],
+    "exploreButton": "Explorar experiências relacionadas"
+  },
+  "experiences": {
+    "intro": {
+      "eyebrow": "Experiências",
+      "title": "Escolha os serviços e experiências que melhor se ajustam à sua viagem",
+      "description": "Descoberta das ilhas, profundidade cultural, logística tranquila ou apoio à medida: a Tuba Travel ajuda a construir uma viagem com apoio local atencioso."
+    },
+    "cards": [
+      {
+        "title": "Tours pelas ilhas",
+        "description": "Experiências guiadas para conhecer os principais destaques de cada ilha e aproveitar melhor o tempo de viagem.",
+        "tag": "Descoberta"
+      },
+      {
+        "title": "Experiências culturais",
+        "description": "Momentos cuidadosamente escolhidos para aproximar o viajante da música, da gastronomia, do património e da vida local.",
+        "tag": "Cultura"
+      },
+      {
+        "title": "Transfers de aeroporto",
+        "description": "Apoio fiável para chegadas mais tranquilas, partidas mais suaves e menos stress nas deslocações.",
+        "tag": "Conforto"
+      },
+      {
+        "title": "Planeamento personalizado",
+        "description": "Acompanhamento à medida para viajantes que desejam um itinerário mais fluido e bem pensado.",
+        "tag": "Planeamento"
+      }
+    ],
+    "ctaButton": "Pedir este serviço"
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Sobre a Tuba Travel",
+      "title": "Uma marca de viagens criada para apresentar Cabo Verde com acolhimento, confiança e sofisticação discreta",
+      "description": "A Tuba Travel está a ser construída como uma plataforma de turismo multilingue que ajuda os visitantes a descobrir Cabo Verde através de informação clara, perspetiva local e um acompanhamento mais humano.",
+      "highlights": [
+        "Baseada em conhecimento real dos destinos",
+        "Pensada para viajantes internacionais",
+        "Premium na presença, calorosa no tom"
+      ]
+    },
+    "whoWeAre": {
+      "title": "Quem somos",
+      "description": "A Tuba Travel é uma marca de turismo em crescimento que quer tornar Cabo Verde mais claro, mais inspirador e melhor apresentado online. Acreditamos que planear uma viagem deve tranquilizar tanto quanto entusiasmar."
+    },
+    "vision": {
+      "title": "A nossa visão",
+      "description": "Queremos criar uma porta de entrada mais refinada e acolhedora para Cabo Verde, onde a curiosidade do viajante se transforme naturalmente em confiança."
+    },
+    "approach": {
+      "title": "A nossa abordagem",
+      "description": "Juntamos clareza, sensibilidade local e simplicidade elegante. Isso traduz-se em conteúdo multilingue, estrutura limpa e pontos de contacto pensados para orientar sem confundir."
+    },
+    "whyTravelWithUs": {
+      "title": "Por que viajar com a Tuba Travel",
+      "description": "Porque a viagem começa muito antes da chegada. A Tuba Travel quer tornar esse início mais fluido, mais fiável e mais ligado ao espírito de Cabo Verde."
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contacto",
+      "title": "Conte-nos que tipo de viagem a Cabo Verde tem em mente",
+      "description": "Quer já saiba qual a ilha que procura ou ainda esteja a explorar possibilidades, estamos aqui para ajudar a dar o próximo passo com clareza, acolhimento e conhecimento local.",
+      "trustMessage": "Cada pedido é tratado com atenção, clareza e verdadeiro cuidado com os detalhes da viagem que está a começar."
+    },
+    "whatsapp": {
+      "title": "Prefere começar no WhatsApp?",
+      "description": "Para uma pergunta rápida, uma primeira ideia de viagem ou uma conversa mais direta, o WhatsApp é muitas vezes a forma mais simples de começar.",
+      "button": "Falar no WhatsApp",
+      "phone": "+238 991 00 00"
+    },
+    "email": {
+      "title": "Prefere escrever por email?",
+      "description": "Partilhe connosco as suas ideias de viagem, o destino pretendido ou as necessidades do seu grupo e continuaremos a conversa com cuidado.",
+      "button": "Enviar email à Tuba Travel",
+      "address": "hello@tubatravel.com"
+    },
+    "form": {
+      "title": "Comece a planear a sua viagem connosco",
+      "description": "Partilhe alguns detalhes sobre a sua viagem para que possamos responder de forma mais útil, mais próxima e mais fácil de pôr em prática.",
+      "submitButton": "Enviar o meu pedido",
+      "submittingButton": "A enviar...",
+      "successTitle": "O seu pedido foi recebido",
+      "successDescription": "Obrigado por contactar a Tuba Travel. Recebemos os seus dados e entraremos em contacto consigo assim que possível.",
+      "resetButton": "Enviar outro pedido",
+      "errorMessage": "Não foi possível enviar o seu pedido neste momento. Tente novamente dentro de instantes ou contacte-nos por WhatsApp ou email.",
+      "validation": {
+        "required": "Este campo é obrigatório.",
+        "invalidEmail": "Por favor, introduza um endereço de email válido.",
+        "invalidWhatsappNumber": "Por favor, introduza um número de WhatsApp válido."
+      },
+      "fields": {
+        "fullName": {
+          "label": "Nome completo",
+          "placeholder": "O seu nome completo"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "O seu endereço de email"
+        },
+        "whatsappNumber": {
+          "label": "Número de WhatsApp",
+          "placeholder": "O seu número de WhatsApp"
+        },
+        "preferredDestination": {
+          "label": "Destino preferido",
+          "placeholder": "Que ilha ou destino lhe desperta mais interesse?"
+        },
+        "serviceInterestedIn": {
+          "label": "Serviço de interesse",
+          "placeholder": "Tours, transfers, planeamento ou outro serviço"
+        },
+        "travelDate": {
+          "label": "Data da viagem",
+          "placeholder": ""
+        },
+        "numberOfTravelers": {
+          "label": "Número de viajantes",
+          "placeholder": "Quantos viajantes fazem parte do grupo?"
+        },
+        "message": {
+          "label": "Mensagem",
+          "placeholder": "Conte-nos mais sobre os seus planos, interesses ou dúvidas"
+        }
+      }
+    }
+  }
+}
