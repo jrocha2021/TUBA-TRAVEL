@@ -1,7 +1,6 @@
 import en from "@/messages/en.json";
 import fr from "@/messages/fr.json";
 import pt from "@/messages/pt.json";
-
 export const locales = ["en", "fr", "pt"] as const;
 
 export type Locale = (typeof locales)[number];
@@ -30,15 +29,32 @@ type PageMessages = {
 };
 
 type DestinationCard = {
+  slug: string;
   title: string;
   description: string;
   tag: string;
 };
 
 type ExperienceCard = {
+  id: string;
   title: string;
   description: string;
   tag: string;
+};
+
+type ExperienceCardOverride = {
+  description: string;
+  tag: string;
+};
+
+type IslandExperienceMessages = {
+  name: string;
+  badge: string;
+  title: string;
+  description: string;
+  emphasis: string;
+  cardOrder: string[];
+  cardOverrides: Record<string, ExperienceCardOverride>;
 };
 
 type HeroMessages = {
@@ -122,7 +138,11 @@ export type Messages = {
     intro: PageMessages & {
       eyebrow: string;
     };
+    selectionLabel: string;
+    switchIslandLabel: string;
+    allIslandsLabel: string;
     cards: ExperienceCard[];
+    islands: Record<string, IslandExperienceMessages>;
     ctaButton: string;
   };
   about: {

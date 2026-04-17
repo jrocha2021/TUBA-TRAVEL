@@ -110,19 +110,22 @@
     },
     "cards": [
       {
+        "slug": "santiago",
         "title": "Santiago",
         "description": "Un choix fort pour les voyageurs qui recherchent histoire, musique, saveurs locales et une relation plus profonde avec la culture capverdienne.",
         "tag": "Patrimoine et vie locale"
       },
       {
+        "slug": "sal",
         "title": "Sal",
         "description": "Une destination côtière lumineuse pour ceux qui aiment la plage, les séjours détendus et la simplicité du temps insulaire.",
         "tag": "Soleil et rivage"
       },
       {
-        "title": "São Vicente",
-        "description": "Une île vibrante, créative et expressive, reconnue pour son caractère, son charme maritime et son énergie urbaine.",
-        "tag": "Culture et caractère"
+        "slug": "santo-antao",
+        "title": "Santo Antao",
+        "description": "Une île de relief et de vallées pour les voyageurs attirés par les montagnes, les villages et une découverte profondément naturelle.",
+        "tag": "Montagnes et nature"
       }
     ],
     "exploreButton": "Découvrir les expériences liées"
@@ -133,28 +136,223 @@
       "title": "Choisissez les services et expériences qui conviennent le mieux à votre séjour",
       "description": "Découverte des îles, immersion culturelle, logistique fluide ou accompagnement sur mesure: Tuba Travel vous aide à construire un voyage avec un soutien local attentif."
     },
+    "selectionLabel": "Destination choisie",
+    "switchIslandLabel": "Îles recommandées",
+    "allIslandsLabel": "Toutes les îles",
     "cards": [
       {
+        "id": "island-tours",
         "title": "Circuits dans les îles",
         "description": "Des expériences guidées pour découvrir l'essentiel de chaque île et profiter au mieux du temps sur place.",
         "tag": "Découverte"
       },
       {
+        "id": "cultural-experiences",
         "title": "Expériences culturelles",
         "description": "Des moments choisis pour vous rapprocher de la musique, de la gastronomie, du patrimoine et de la vie locale.",
         "tag": "Culture"
       },
       {
+        "id": "airport-transfers",
         "title": "Transferts aéroport",
         "description": "Un service fiable pour des arrivées plus fluides, des départs plus sereins et moins de stress dans les déplacements.",
         "tag": "Confort"
       },
       {
+        "id": "personalized-travel-planning",
         "title": "Planification personnalisée",
         "description": "Un accompagnement sur mesure pour les voyageurs qui souhaitent un itinéraire plus fluide et mieux structuré.",
         "tag": "Organisation"
       }
     ],
+    "islands": {
+      "santiago": {
+        "name": "Santiago",
+        "badge": "Expériences pour Santiago",
+        "title": "Des expériences pensées autour de la culture, de l'histoire et du rythme local de Santiago",
+        "description": "Santiago se découvre au mieux à travers des visites guidées, une profondeur patrimoniale et des moments qui rapprochent de la musique, du quotidien et du caractère de l'île.",
+        "emphasis": "Recommandé pour la culture, les visites locales, le patrimoine et le rythme urbain",
+        "cardOrder": [
+          "cultural-experiences",
+          "island-tours",
+          "personalized-travel-planning",
+          "airport-transfers"
+        ],
+        "cardOverrides": {
+          "island-tours": {
+            "description": "Des parcours guidés à travers Santiago qui relient sites clés, rythme urbain et identité profonde de l'île avec plus de sens.",
+            "tag": "Découverte guidée"
+          },
+          "cultural-experiences": {
+            "description": "Le choix le plus naturel pour Santiago: patrimoine, musique locale, histoires de quartiers et expériences ancrées dans la vraie vie de l'île.",
+            "tag": "Patrimoine et culture"
+          },
+          "airport-transfers": {
+            "description": "Un soutien confortable pour les arrivées et départs à Praia, afin que la partie pratique du voyage reste simple dès le début.",
+            "tag": "Arrivées en ville"
+          },
+          "personalized-travel-planning": {
+            "description": "Utile pour les voyageurs qui souhaitent réunir culture, histoire et rencontres locales dans un itinéraire plus clair à Santiago.",
+            "tag": "Planification sur mesure"
+          }
+        }
+      },
+      "sal": {
+        "name": "Sal",
+        "badge": "Recommandé pour Sal",
+        "title": "Des expériences pensées pour le calme balnéaire, la fluidité et les plaisirs côtiers de Sal",
+        "description": "Sal fonctionne le mieux lorsque le voyage reste simple, léger et bien rythmé. Les expériences les plus pertinentes mettent ici l'accent sur le littoral, la logistique facile et une planification détendue.",
+        "emphasis": "Recommandé pour les séjours plage, la facilité insulaire, l'air marin et les transferts fluides",
+        "cardOrder": [
+          "island-tours",
+          "airport-transfers",
+          "personalized-travel-planning",
+          "cultural-experiences"
+        ],
+        "cardOverrides": {
+          "island-tours": {
+            "description": "Une découverte simple de l'île pour profiter du littoral de Sal, de son atmosphère lumineuse et de ses étapes maritimes sans alourdir la journée.",
+            "tag": "Découverte côtière"
+          },
+          "cultural-experiences": {
+            "description": "Une manière légère d'ajouter un peu de contexte local à un séjour centré sur la plage, sans rompre le rythme détendu de Sal.",
+            "tag": "Moments locaux"
+          },
+          "airport-transfers": {
+            "description": "L'un des services les plus utiles à Sal, où une arrivée et un départ fluides renforcent naturellement la sensation de vacances faciles.",
+            "tag": "Arrivées fluides"
+          },
+          "personalized-travel-planning": {
+            "description": "Idéal pour équilibrer temps de plage, sorties simples et bon niveau d'accompagnement sans perdre la douceur de Sal.",
+            "tag": "Planification détendue"
+          }
+        }
+      },
+      "sao-vicente": {
+        "name": "São Vicente",
+        "badge": "Pensé pour São Vicente",
+        "title": "Des expériences conçues pour la créativité, la musique et le caractère côtier urbain de São Vicente",
+        "description": "São Vicente prend toute sa force lorsque le séjour s'appuie sur les rencontres locales, l'atmosphère artistique et la culture maritime expressive de l'île.",
+        "emphasis": "Recommandé pour la musique, le charme urbain, les rencontres locales et les séjours soignés",
+        "cardOrder": [
+          "cultural-experiences",
+          "personalized-travel-planning",
+          "island-tours",
+          "airport-transfers"
+        ],
+        "cardOverrides": {
+          "island-tours": {
+            "description": "Une manière bien rythmée de découvrir São Vicente au-delà de l'évidence, entre atmosphère maritime, repères locaux et forte personnalité insulaire.",
+            "tag": "Caractère insulaire"
+          },
+          "cultural-experiences": {
+            "description": "Le choix le plus clair pour São Vicente: musique, énergie créative, vie de quartier et expériences culturelles pleines de personnalité.",
+            "tag": "Musique et culture"
+          },
+          "airport-transfers": {
+            "description": "Des transferts fiables qui simplifient la logistique pour laisser plus de place au caractère et à l'atmosphère sociale de l'île.",
+            "tag": "Logistique fluide"
+          },
+          "personalized-travel-planning": {
+            "description": "Particulièrement utile pour construire un séjour plus intentionnel autour de la musique, de la gastronomie, du rythme local et de bonnes recommandations.",
+            "tag": "Séjour sur mesure"
+          }
+        }
+      },
+      "santo-antao": {
+        "name": "Santo Antão",
+        "badge": "Expériences pour Santo Antão",
+        "title": "Des expériences construites autour des sentiers, des paysages et de la profondeur naturelle de Santo Antão",
+        "description": "Santo Antão révèle le meilleur de lui-même lorsque le voyage suit le relief. Les expériences les plus pertinentes donnent ici la priorité aux itinéraires, aux panoramas, à l'air pur et à une progression bien pensée sur l'île.",
+        "emphasis": "Recommandé pour la randonnée, les routes panoramiques, la nature et la planification d'itinéraires",
+        "cardOrder": [
+          "island-tours",
+          "personalized-travel-planning",
+          "cultural-experiences",
+          "airport-transfers"
+        ],
+        "cardOverrides": {
+          "island-tours": {
+            "description": "Une découverte guidée pensée autour des vallées, des départs de sentiers, des routes de montagne et des points de vue les plus marquants.",
+            "tag": "Découverte panoramique"
+          },
+          "cultural-experiences": {
+            "description": "Un complément plus léger au voyage de nature, pour ajouter du contexte local et une dimension humaine entre deux parcours extérieurs.",
+            "tag": "Contexte local"
+          },
+          "airport-transfers": {
+            "description": "Utile pour coordonner les déplacements d'un séjour plus structuré par les routes et les horaires.",
+            "tag": "Soutien itinéraire"
+          },
+          "personalized-travel-planning": {
+            "description": "Fortement recommandé à Santo Antão, où le bon rythme, les bons choix de parcours et la structure des nuits changent beaucoup l'expérience.",
+            "tag": "Planification des sentiers"
+          }
+        }
+      },
+      "boa-vista": {
+        "name": "Boa Vista",
+        "badge": "Recommandé pour Boa Vista",
+        "title": "Des expériences pensées pour les plages tranquilles, l'ouverture et l'évasion calme de Boa Vista",
+        "description": "Boa Vista se vit mieux avec une approche légère: logistique simple, soutien orienté plage et juste assez d'organisation pour garder le séjour fluide sans perdre le sentiment d'espace.",
+        "emphasis": "Recommandé pour les séjours plage calmes, les transferts simples et une planification légère",
+        "cardOrder": [
+          "airport-transfers",
+          "island-tours",
+          "personalized-travel-planning",
+          "cultural-experiences"
+        ],
+        "cardOverrides": {
+          "island-tours": {
+            "description": "Une découverte légère de l'île pour profiter de l'ouverture de Boa Vista, de ses rivages et de ses déplacements simples et agréables.",
+            "tag": "Découverte balnéaire"
+          },
+          "cultural-experiences": {
+            "description": "Une couche culturelle discrète pour ceux qui souhaitent un peu plus de contexte sans quitter l'esprit calme et balnéaire du séjour.",
+            "tag": "Regard local doux"
+          },
+          "airport-transfers": {
+            "description": "Un service particulièrement pertinent à Boa Vista, où des arrivées et départs fluides renforcent la sensation d'évasion sans effort.",
+            "tag": "Arrivées sereines"
+          },
+          "personalized-travel-planning": {
+            "description": "Utile pour composer un séjour paisible et simple, surtout dans le cadre d'une parenthèse plage plus longue.",
+            "tag": "Planification douce"
+          }
+        }
+      },
+      "fogo": {
+        "name": "Fogo",
+        "badge": "Expériences pour Fogo",
+        "title": "Des expériences pensées autour de l'identité volcanique, du caractère et de l'exploration plus profonde de Fogo",
+        "description": "Fogo se distingue par son unicité et sa profondeur. Les expériences les plus pertinentes mettent ici l'accent sur la découverte guidée, les itinéraires particuliers et une compréhension plus intentionnelle de l'île.",
+        "emphasis": "Recommandé pour la découverte guidée, les paysages volcaniques et les itinéraires plus profonds",
+        "cardOrder": [
+          "island-tours",
+          "cultural-experiences",
+          "personalized-travel-planning",
+          "airport-transfers"
+        ],
+        "cardOverrides": {
+          "island-tours": {
+            "description": "La découverte guidée est particulièrement importante à Fogo, pour traverser les paysages volcaniques avec plus de contexte, de confiance et de perspective.",
+            "tag": "Découverte volcanique"
+          },
+          "cultural-experiences": {
+            "description": "Un complément fort au décor spectaculaire de l'île, apportant profondeur locale, récits vécus et perspective culturelle au voyage.",
+            "tag": "Profondeur insulaire"
+          },
+          "airport-transfers": {
+            "description": "Un soutien pratique utile pour une destination où des déplacements bien pensés rendent l'ensemble de l'itinéraire plus fluide.",
+            "tag": "Coordination voyage"
+          },
+          "personalized-travel-planning": {
+            "description": "Très pertinent pour Fogo, où un itinéraire plus précis permet de mieux relier découverte, rythme et singularité du séjour.",
+            "tag": "Itinéraire spécial"
+          }
+        }
+      }
+    },
     "ctaButton": "Demander ce service"
   },
   "about": {

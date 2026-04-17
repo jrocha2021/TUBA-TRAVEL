@@ -59,7 +59,12 @@ export default function DestinationsPage({ params }: DestinationsPageProps) {
                 {destination.description}
               </p>
               <Link
-                href={`/${locale}/experiences`}
+                href={{
+                  pathname: `/${locale}/experiences`,
+                  query: {
+                    island: destination.slug
+                  }
+                }}
                 className="mt-6 inline-flex w-fit rounded-full bg-ocean px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-ocean/20 hover:bg-ocean/90"
               >
                 {messages.destinations.exploreButton}
