@@ -60,7 +60,7 @@ export default function ExperiencesPage({
     selectedIslandMessages?.description ?? messages.experiences.intro.description;
 
   return (
-    <div className="space-y-10 pb-8">
+    <div className="brand-page-shell space-y-10 rounded-[2.5rem] px-4 py-4 pb-8 sm:px-6 sm:py-6 lg:px-8">
       <section className="section-space">
         <div className="soft-panel overflow-hidden px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
@@ -75,22 +75,22 @@ export default function ExperiencesPage({
               <div className="glass-line rounded-[2rem] p-6">
                 {selectedIslandMessages ? (
                   <>
-                    <p className="text-sm uppercase tracking-[0.24em] text-ocean/80">
+                    <p className="text-sm uppercase tracking-[0.24em] text-brand-red/85">
                       {messages.experiences.selectionLabel}
                     </p>
-                    <p className="mt-4 text-xl font-semibold tracking-tight text-ink">
+                    <p className="mt-4 text-xl font-semibold tracking-tight text-white">
                       {selectedIslandMessages.name}
                     </p>
-                    <p className="mt-3 text-base leading-7 text-ink/75">
+                    <p className="mt-3 text-base leading-7 text-brand-muted">
                       {selectedIslandMessages.emphasis}
                     </p>
                   </>
                 ) : (
                   <>
-                    <p className="text-sm uppercase tracking-[0.24em] text-ocean/80">
+                    <p className="text-sm uppercase tracking-[0.24em] text-brand-red/85">
                       Tuba Travel
                     </p>
-                    <p className="mt-4 text-lg leading-8 text-ink/75">
+                    <p className="mt-4 text-lg leading-8 text-brand-muted">
                       {messages.common.learnMore}
                     </p>
                   </>
@@ -103,7 +103,7 @@ export default function ExperiencesPage({
 
       <section className="section-space pt-0">
         <div className="soft-panel px-6 py-5 sm:px-8">
-          <p className="text-sm uppercase tracking-[0.24em] text-ocean/80">
+          <p className="text-sm uppercase tracking-[0.24em] text-brand-red/85">
             {messages.experiences.switchIslandLabel}
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
@@ -111,8 +111,8 @@ export default function ExperiencesPage({
               href={`/${locale}/experiences`}
               className={`rounded-full px-4 py-2 text-sm font-medium transition ${
                 selectedIsland
-                  ? "border border-black/10 bg-white text-ink hover:bg-black/5"
-                  : "bg-ocean text-white shadow-lg shadow-ocean/20"
+                  ? "border border-white/14 bg-white/[0.03] text-white hover:border-brand-red/70 hover:bg-brand-red/10"
+                  : "bg-brand-red text-white shadow-[0_18px_35px_rgba(225,6,44,0.24)]"
               }`}
             >
               {messages.experiences.allIslandsLabel}
@@ -132,8 +132,8 @@ export default function ExperiencesPage({
                   }}
                   className={`rounded-full px-4 py-2 text-sm font-medium transition ${
                     isActive
-                      ? "bg-ocean text-white shadow-lg shadow-ocean/20"
-                      : "border border-black/10 bg-white text-ink hover:bg-black/5"
+                      ? "bg-brand-red text-white shadow-[0_18px_35px_rgba(225,6,44,0.24)]"
+                      : "border border-white/14 bg-white/[0.03] text-white hover:border-brand-red/70 hover:bg-brand-red/10"
                   }`}
                 >
                   {island.name}
@@ -151,19 +151,23 @@ export default function ExperiencesPage({
               key={experience.title}
               className="soft-panel flex h-full flex-col p-6"
             >
-              <ImagePanel image={experience.image} aspect="landscape" />
-              <p className="text-sm uppercase tracking-[0.24em] text-sun">
+              <ImagePanel
+                image={experience.image}
+                aspect="landscape"
+                className="border border-white/10"
+              />
+              <p className="text-sm uppercase tracking-[0.24em] text-brand-red">
                 0{index + 1} . {experience.tag}
               </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink">
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white">
                 {experience.title}
               </h2>
-              <p className="mt-4 flex-1 text-base leading-7 text-ink/75">
+              <p className="mt-4 flex-1 text-base leading-7 text-brand-muted">
                 {experience.description}
               </p>
               <Link
                 href={`/${locale}/contact`}
-                className="mt-6 inline-flex w-fit rounded-full bg-ocean px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-ocean/20 hover:bg-ocean/90"
+                className="brand-primary-button mt-6 inline-flex w-fit"
               >
                 {messages.experiences.ctaButton}
               </Link>

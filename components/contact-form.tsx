@@ -76,17 +76,17 @@ export default function ContactForm({ messages }: ContactFormProps) {
 
   if (isSubmitted) {
     return (
-      <div className="rounded-[2rem] border border-ocean/10 bg-ocean/5 p-6 sm:p-8">
-        <h3 className="text-2xl font-semibold tracking-tight text-ink">
+      <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+        <h3 className="text-2xl font-semibold tracking-tight text-white">
           {messages.successTitle}
         </h3>
-        <p className="mt-3 max-w-2xl text-base leading-7 text-ink/75">
+        <p className="mt-3 max-w-2xl text-base leading-7 text-brand-muted">
           {messages.successDescription}
         </p>
         <button
           type="button"
           onClick={() => setIsSubmitted(false)}
-          className="mt-6 rounded-full bg-ocean px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-ocean/20 hover:bg-ocean/90"
+          className="brand-primary-button mt-6"
         >
           {messages.resetButton}
         </button>
@@ -97,37 +97,37 @@ export default function ContactForm({ messages }: ContactFormProps) {
   return (
     <form onSubmit={handleSubmit} noValidate className="grid gap-5 md:grid-cols-2">
       {submitError ? (
-        <div className="md:col-span-2 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <div className="md:col-span-2 rounded-2xl border border-brand-red/30 bg-brand-red/10 px-4 py-3 text-sm text-white">
           {submitError}
         </div>
       ) : null}
 
       <label className="space-y-2">
-        <span className="text-sm font-medium text-ink">{messages.fields.fullName.label}</span>
+        <span className="text-sm font-medium text-white">{messages.fields.fullName.label}</span>
         <input
           type="text"
           value={values.fullName}
           onChange={(event) => handleChange("fullName", event.target.value)}
           placeholder={messages.fields.fullName.placeholder}
-          className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-ocean"
+          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
         />
-        {errors.fullName ? <p className="text-sm text-red-600">{errors.fullName}</p> : null}
+        {errors.fullName ? <p className="text-sm text-brand-red">{errors.fullName}</p> : null}
       </label>
 
       <label className="space-y-2">
-        <span className="text-sm font-medium text-ink">{messages.fields.email.label}</span>
+        <span className="text-sm font-medium text-white">{messages.fields.email.label}</span>
         <input
           type="email"
           value={values.email}
           onChange={(event) => handleChange("email", event.target.value)}
           placeholder={messages.fields.email.placeholder}
-          className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-ocean"
+          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
         />
-        {errors.email ? <p className="text-sm text-red-600">{errors.email}</p> : null}
+        {errors.email ? <p className="text-sm text-brand-red">{errors.email}</p> : null}
       </label>
 
       <label className="space-y-2">
-        <span className="text-sm font-medium text-ink">
+        <span className="text-sm font-medium text-white">
           {messages.fields.whatsappNumber.label}
         </span>
         <input
@@ -135,15 +135,15 @@ export default function ContactForm({ messages }: ContactFormProps) {
           value={values.whatsappNumber}
           onChange={(event) => handleChange("whatsappNumber", event.target.value)}
           placeholder={messages.fields.whatsappNumber.placeholder}
-          className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-ocean"
+          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
         />
         {errors.whatsappNumber ? (
-          <p className="text-sm text-red-600">{errors.whatsappNumber}</p>
+          <p className="text-sm text-brand-red">{errors.whatsappNumber}</p>
         ) : null}
       </label>
 
       <label className="space-y-2">
-        <span className="text-sm font-medium text-ink">
+        <span className="text-sm font-medium text-white">
           {messages.fields.preferredDestination.label}
         </span>
         <input
@@ -151,15 +151,15 @@ export default function ContactForm({ messages }: ContactFormProps) {
           value={values.preferredDestination}
           onChange={(event) => handleChange("preferredDestination", event.target.value)}
           placeholder={messages.fields.preferredDestination.placeholder}
-          className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-ocean"
+          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
         />
         {errors.preferredDestination ? (
-          <p className="text-sm text-red-600">{errors.preferredDestination}</p>
+          <p className="text-sm text-brand-red">{errors.preferredDestination}</p>
         ) : null}
       </label>
 
       <label className="space-y-2">
-        <span className="text-sm font-medium text-ink">
+        <span className="text-sm font-medium text-white">
           {messages.fields.serviceInterestedIn.label}
         </span>
         <input
@@ -167,26 +167,26 @@ export default function ContactForm({ messages }: ContactFormProps) {
           value={values.serviceInterestedIn}
           onChange={(event) => handleChange("serviceInterestedIn", event.target.value)}
           placeholder={messages.fields.serviceInterestedIn.placeholder}
-          className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-ocean"
+          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
         />
         {errors.serviceInterestedIn ? (
-          <p className="text-sm text-red-600">{errors.serviceInterestedIn}</p>
+          <p className="text-sm text-brand-red">{errors.serviceInterestedIn}</p>
         ) : null}
       </label>
 
       <label className="space-y-2">
-        <span className="text-sm font-medium text-ink">{messages.fields.travelDate.label}</span>
+        <span className="text-sm font-medium text-white">{messages.fields.travelDate.label}</span>
         <input
           type="date"
           value={values.travelDate}
           onChange={(event) => handleChange("travelDate", event.target.value)}
-          className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-ocean"
+          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition focus:border-brand-red focus:bg-white/[0.05]"
         />
-        {errors.travelDate ? <p className="text-sm text-red-600">{errors.travelDate}</p> : null}
+        {errors.travelDate ? <p className="text-sm text-brand-red">{errors.travelDate}</p> : null}
       </label>
 
       <label className="space-y-2 md:col-span-2">
-        <span className="text-sm font-medium text-ink">
+        <span className="text-sm font-medium text-white">
           {messages.fields.numberOfTravelers.label}
         </span>
         <input
@@ -194,30 +194,30 @@ export default function ContactForm({ messages }: ContactFormProps) {
           value={values.numberOfTravelers}
           onChange={(event) => handleChange("numberOfTravelers", event.target.value)}
           placeholder={messages.fields.numberOfTravelers.placeholder}
-          className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-ocean"
+          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
         />
         {errors.numberOfTravelers ? (
-          <p className="text-sm text-red-600">{errors.numberOfTravelers}</p>
+          <p className="text-sm text-brand-red">{errors.numberOfTravelers}</p>
         ) : null}
       </label>
 
       <label className="space-y-2 md:col-span-2">
-        <span className="text-sm font-medium text-ink">{messages.fields.message.label}</span>
+        <span className="text-sm font-medium text-white">{messages.fields.message.label}</span>
         <textarea
           rows={6}
           value={values.message}
           onChange={(event) => handleChange("message", event.target.value)}
           placeholder={messages.fields.message.placeholder}
-          className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-ocean"
+          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
         />
-        {errors.message ? <p className="text-sm text-red-600">{errors.message}</p> : null}
+        {errors.message ? <p className="text-sm text-brand-red">{errors.message}</p> : null}
       </label>
 
       <div className="md:col-span-2">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="rounded-full bg-ocean px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-ocean/20 hover:bg-ocean/90 disabled:cursor-not-allowed disabled:bg-ocean/70"
+          className="brand-primary-button disabled:cursor-not-allowed disabled:bg-brand-red/70"
         >
           {isSubmitting ? messages.submittingButton : messages.submitButton}
         </button>
