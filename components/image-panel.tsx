@@ -35,10 +35,10 @@ export default function ImagePanel({
         fill
         priority={priority}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className={`object-cover ${imageClassName ?? ""}`}
+        className={`object-cover saturate-[1.08] contrast-[1.06] brightness-[0.96] ${imageClassName ?? ""}`}
       />
       <div
-        className={`absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent ${overlayClassName ?? ""}`}
+        className={`absolute inset-0 bg-[linear-gradient(180deg,rgba(3,4,3,0.14),rgba(3,4,3,0.04)_24%,rgba(7,20,16,0.38)_72%,rgba(3,4,3,0.66)_100%)] ${overlayClassName ?? ""}`}
       />
     </div>
   );

@@ -29,8 +29,8 @@ export default function DestinationsPage({ params }: DestinationsPageProps) {
             <div className="space-y-4">
               <ImagePanel image={siteImages.destinations.intro} aspect="landscape" priority />
               <div className="glass-line rounded-[2rem] p-6">
-                <p className="text-sm uppercase tracking-[0.24em] text-brand-red/85">
-                  Tuba Travel
+                <p className="text-sm uppercase tracking-[0.24em] text-brand-gold">
+                  TubaTour
                 </p>
                 <p className="mt-4 text-lg leading-8 text-brand-muted">
                   {messages.common.explore}
@@ -53,7 +53,7 @@ export default function DestinationsPage({ params }: DestinationsPageProps) {
                 aspect="landscape"
                 className="border border-white/10"
               />
-              <p className="text-sm uppercase tracking-[0.24em] text-brand-red/85">
+              <p className="text-sm uppercase tracking-[0.24em] text-brand-gold">
                 0{index + 1} . {destination.tag}
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white">
@@ -69,7 +69,7 @@ export default function DestinationsPage({ params }: DestinationsPageProps) {
                     island: destination.slug
                   }
                 }}
-                className="brand-primary-button mt-6 inline-flex w-fit"
+                className="brand-primary-button mt-6 inline-flex w-full justify-center sm:w-fit"
               >
                 {messages.destinations.exploreButton}
               </Link>

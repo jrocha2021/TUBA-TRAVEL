@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tuba Travel",
-  description: "Multilingual tourism MVP for Cabo Verde."
+  title: "TubaTour",
+  description: "Premium Cabo Verde tours, transfers, and local experiences."
 };
 
 type RootLayoutProps = {

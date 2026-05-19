@@ -1,112 +1,506 @@
 {
   "brand": {
-    "name": "Tuba Travel",
-    "location": "Cabo Verde"
+    "name": "TubaTour",
+    "location": "Cabo Verde Experiences"
   },
   "nav": {
     "home": "Home",
-    "destinations": "Destinations",
     "experiences": "Experiences",
+    "destinations": "Destinations",
+    "transfers": "Transfers",
+    "howItWorks": "How It Works",
+    "partners": "Partners",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "bookNow": "Book Now"
   },
   "footer": {
-    "tagline": "Thoughtful journeys through Cabo Verde, shaped with local warmth and quiet refinement.",
+    "tagline": "Authentic tours, transfers, and local experiences across Cape Verde.",
+    "description": "Premium local booking support for airport transfers, island tours, cultural moments, beach days, food experiences, and custom planning.",
+    "quickLinksTitle": "Quick links",
+    "contactTitle": "Contact",
+    "whatsapp": "Official TubaTour business contact is handled through secure platform support channels",
     "rights": "All rights reserved."
   },
   "common": {
     "explore": "Explore Cabo Verde",
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "viewTours": "View Tours",
+    "sendInquiry": "Send Inquiry",
+    "chatOnWhatsapp": "Chat on WhatsApp",
+    "bookViaWhatsapp": "Book via WhatsApp",
+    "bookNow": "Book Now",
+    "bookTransfer": "Book Transfer",
+    "requestTransfer": "Request Transfer",
+    "bookTour": "Book Tour",
+    "bookDayTrip": "Book Day Trip",
+    "bookExperience": "Book Experience",
+    "becomePartner": "Become a Partner",
+    "partnerInquiry": "Partner Inquiry"
   },
   "home": {
     "hero": {
-      "eyebrow": "Cabo Verde, carefully revealed",
-      "title": "Travel Cabo Verde with local warmth, elegant guidance, and confidence from the start",
-      "description": "Tuba Travel is designed for travelers who want more than information alone. We bring together trusted local insight, memorable experiences, and a calm premium feel so your journey begins with clarity and peace of mind.",
-      "primaryAction": "Find your island",
-      "secondaryAction": "Plan your experiences",
-      "highlights": [
-        "Local insight with a premium touch",
-        "Multilingual guidance that feels personal",
-        "Clear planning from inspiration to inquiry"
+      "eyebrow": "Cape Verde tourism marketplace",
+      "title": "Discover Cape Verde with trusted local experiences",
+      "description": "Discover tours, airport transfers, local guides, stays, food experiences, and custom island planning through one Cape Verde marketplace connecting travelers with verified local partners.",
+      "primaryAction": "Book Now",
+      "secondaryAction": "Explore Experiences",
+      "tertiaryAction": "Become a Partner",
+      "marketplaceFocus": [
+        "Local guides",
+        "Airport transfers",
+        "Hotels & Airbnb stays",
+        "Restaurants",
+        "Local experiences"
+      ],
+      "trustHighlights": [
+        "Verified local partners",
+        "Traveler booking accounts",
+        "Partner account management",
+        "Secure payment-ready architecture"
       ]
     },
-    "destinations": {
-      "eyebrow": "Featured destinations",
-      "title": "Choose the island that matches the journey you want",
-      "description": "From beach calm to cultural richness and dramatic scenery, Tuba Travel helps travelers discover the island that feels right for their time, style, and pace.",
+    "transfers": {
+      "eyebrow": "Airport transfers",
+      "title": "Airport transfers and private driver services inside one booking-ready platform",
+      "description": "From first arrival to hotel drop-off, TubaTour is structuring transfer inventory, availability planning, and partner coordination inside a real marketplace foundation.",
+      "helper": "Transfer services are being organized for structured availability, partner response, traveler booking accounts, and secure payment-ready checkout flows.",
       "items": [
         {
-          "title": "Sal",
-          "description": "Perfect for relaxed beach stays, sunshine, sea views, and an easy island atmosphere that invites you to slow down.",
-          "tag": "Coast and ease"
+          "title": "Praia Airport Transfer",
+          "location": "Santiago",
+          "price": "From $35",
+          "description": "Private pickup from Nelson Mandela Airport to hotels, Airbnb stays, and meeting points in Praia.",
+          "buttonLabel": "Request Transfer"
         },
         {
-          "title": "Santiago",
-          "description": "Ideal for travelers who want culture, history, music, and a deeper connection to everyday Cabo Verdean life.",
-          "tag": "Culture and depth"
+          "title": "Sal Airport Transfer",
+          "location": "Sal",
+          "price": "From $30",
+          "description": "Straightforward transfer support for resort arrivals, apartment stays, and Santa Maria drop-off.",
+          "buttonLabel": "Request Transfer"
         },
         {
-          "title": "Santo Antao",
-          "description": "Made for travelers drawn to mountain landscapes, fresh air, and unforgettable outdoor discovery.",
-          "tag": "Nature and wonder"
+          "title": "Boa Vista Airport Transfer",
+          "location": "Boa Vista",
+          "price": "From $30",
+          "description": "Simple airport pickup for calm beach stays, hotels, and island arrival coordination.",
+          "buttonLabel": "Request Transfer"
+        },
+        {
+          "title": "Private Driver Service",
+          "location": "Multiple islands",
+          "price": "Custom quote",
+          "description": "Flexible private driver support for half-day, full-day, and multi-stop travel needs.",
+          "buttonLabel": "Request Driver"
+        }
+      ],
+      "buttonLabel": "View Transfers"
+    },
+    "partnerOpportunities": {
+      "eyebrow": "Partner opportunities",
+      "title": "Join TubaTour as a trusted Cape Verde partner",
+      "description": "TubaTour is building a verified marketplace of local providers across transport, stays, dining, tours, and bookable experiences.",
+      "items": [
+        {
+          "type": "Guides",
+          "title": "Local tour guides",
+          "description": "Receive qualified inquiries for history tours, city tours, beach day trips, and custom island experiences.",
+          "benefits": [
+            "Receive qualified booking inquiries",
+            "Manage a professional public partner profile"
+          ],
+          "buttonLabel": "Partner Inquiry"
+        },
+        {
+          "type": "Drivers",
+          "title": "Airport transfer drivers",
+          "description": "Join as a reliable transfer partner for airport pickup, private driver service, and hotel drop-off requests.",
+          "benefits": [
+            "Receive transfer bookings and traveler requests",
+            "Publish services after admin approval"
+          ],
+          "buttonLabel": "Partner Inquiry"
+        },
+        {
+          "type": "Hosts",
+          "title": "Hotels and Airbnb hosts",
+          "description": "Work with TubaTour to receive traveler requests that need local stays, coordination, and trusted recommendations.",
+          "benefits": [
+            "Receive stay-focused traveler demand",
+            "Coordinate guest support through marketplace accounts"
+          ],
+          "buttonLabel": "Partner Inquiry"
+        },
+        {
+          "type": "Restaurants",
+          "title": "Restaurants and experience providers",
+          "description": "Offer food experiences, dining suggestions, beach clubs, and locally rooted activities for visiting travelers.",
+          "benefits": [
+            "Publish bookable dining and local experiences",
+            "Grow through featured marketplace discovery"
+          ],
+          "buttonLabel": "Partner Inquiry"
+        }
+      ],
+      "primaryAction": "Become a Partner",
+      "secondaryAction": "Partner Inquiry"
+    },
+    "popularExperiences": {
+      "eyebrow": "Popular experiences",
+      "title": "Popular Cape Verde Experiences",
+      "description": "Start with some of the marketplace services designed for structured availability, booking-ready discovery, and trusted local partner delivery.",
+      "items": [
+        {
+          "category": "Transfers",
+          "title": "Praia Airport Transfer",
+          "location": "Praia, Santiago",
+          "price": "From $35",
+          "duration": "30–45 min",
+          "description": "Private pickup from Nelson Mandela Airport to your hotel, Airbnb, or meeting point in Praia.",
+          "buttonLabel": "Book Transfer"
+        },
+        {
+          "category": "History",
+          "title": "Cidade Velha Historical Tour",
+          "location": "Cidade Velha, Santiago",
+          "price": "From $55",
+          "duration": "Half day",
+          "description": "Explore Cabo Verde's UNESCO World Heritage history with a trusted local guide.",
+          "buttonLabel": "Book Tour"
+        },
+        {
+          "category": "Beach day",
+          "title": "Tarrafal Beach Day Trip",
+          "location": "Tarrafal, Santiago",
+          "price": "From $85",
+          "duration": "Full day",
+          "description": "A scenic day trip to one of Santiago's most beautiful beach towns with local stops along the way.",
+          "buttonLabel": "Book Day Trip"
+        },
+        {
+          "category": "City culture",
+          "title": "Praia City & Culture Tour",
+          "location": "Praia, Santiago",
+          "price": "From $45",
+          "duration": "2–3 hours",
+          "description": "Discover markets, viewpoints, neighborhoods, food, music, and everyday Cabo Verdean life.",
+          "buttonLabel": "Book Experience"
         }
       ]
     },
-    "experiences": {
-      "eyebrow": "Featured experiences",
-      "title": "Choose experiences that make your trip feel effortless and memorable",
-      "description": "Our experiences are designed to help you enjoy Cabo Verde with more ease, more depth, and more of the moments you will remember long after the journey ends.",
+    "destinations": {
+      "eyebrow": "Explore by island",
+      "title": "Explore Cape Verde by Island",
+      "description": "Choose the island that fits your travel style, then explore tours, transfers, and local support built around that destination.",
       "items": [
         {
-          "title": "Ocean outings",
-          "description": "Boat days and coastal moments designed for travelers who want sea air, open views, and a sense of quiet escape.",
-          "tag": "Ocean"
+          "slug": "santiago",
+          "title": "Santiago",
+          "description": "Culture, history, city life, Cidade Velha, Tarrafal, and authentic local experiences.",
+          "bestFor": "Culture & history",
+          "buttonLabel": "View Tours"
         },
         {
-          "title": "Cultural encounters",
-          "description": "Local stories, music, food, and neighborhood experiences that bring you closer to the spirit of the islands.",
-          "tag": "Local culture"
+          "slug": "sal",
+          "title": "Sal",
+          "description": "Beach stays, resort ease, sea views, airport access, and simple coastal escapes.",
+          "bestFor": "Beach & relaxation",
+          "buttonLabel": "View Tours"
         },
         {
-          "title": "Scenic adventures",
-          "description": "Walking routes and open-air discoveries for travelers who want movement, perspective, and natural beauty.",
-          "tag": "Adventure"
+          "slug": "santo-antao",
+          "title": "Santo Antão",
+          "description": "Mountain trails, green valleys, hiking routes, village landscapes, and outdoor discovery.",
+          "bestFor": "Hiking & nature",
+          "buttonLabel": "View Tours"
+        },
+        {
+          "slug": "sao-vicente",
+          "title": "São Vicente",
+          "description": "Mindelo character, music, art, local life, and seaside city energy.",
+          "bestFor": "Music & local charm",
+          "buttonLabel": "View Tours"
+        },
+        {
+          "slug": "boa-vista",
+          "title": "Boa Vista",
+          "description": "Quiet beaches, wide-open scenery, calm stays, and easy island escape planning.",
+          "bestFor": "Calm beach escape",
+          "buttonLabel": "View Tours"
+        }
+      ]
+    },
+    "howItWorks": {
+      "eyebrow": "How booking works",
+      "title": "How TubaTour Works",
+      "steps": [
+        {
+          "title": "Choose your experience",
+          "description": "Explore verified services, compare destinations, and choose the experience, transfer, or stay that matches your trip."
+        },
+        {
+          "title": "Select date and availability",
+          "description": "Choose your travel date, party size, location, and booking details through the structured marketplace flow."
+        },
+        {
+          "title": "Book through the platform flow",
+          "description": "Partners receive the booking request, availability is reviewed against service settings, and the booking record moves into the traveler and partner account areas."
+        },
+        {
+          "title": "Enjoy Cabo Verde",
+          "description": "TubaTour tracks service quality, commissions, reviews, and customer communication while verified partners deliver the experience."
         }
       ]
     },
     "whyChooseUs": {
       "eyebrow": "Why choose us",
-      "title": "A travel brand built to feel reassuring, refined, and genuinely local",
-      "description": "Tuba Travel is designed to make planning feel easier, more personal, and more reassuring from the very first step.",
+      "title": "Why travelers choose TubaTour",
+      "description": "Built to make booking and planning feel direct, trustworthy, and easy to move forward with.",
       "items": [
         {
-          "title": "A clear multilingual experience",
-          "description": "Travelers can browse comfortably in English, French, or Portuguese without losing consistency or ease."
+          "title": "Trusted local network",
+          "description": "We work with local guides, drivers, and experience providers who know Cabo Verde personally."
         },
         {
-          "title": "A structure built for real travel decisions",
-          "description": "Destinations, services, and inquiries are organized to support how people actually choose and plan island journeys."
+          "title": "Easy planning",
+          "description": "From airport pickup to full-day tours, we help travelers plan with clarity and confidence."
         },
         {
-          "title": "A strong foundation for growth",
-          "description": "The platform is ready to evolve into richer guides, service flows, and booking-ready experiences over time."
+          "title": "Multilingual support",
+          "description": "Support in English, Portuguese, French, and local Cabo Verdean context."
+        },
+        {
+          "title": "Built for real travel decisions",
+          "description": "Clear experiences, direct inquiries, transparent communication, and flexible planning."
         }
       ]
     },
-    "cta": {
-      "eyebrow": "Plan with confidence",
-      "title": "Ready to take the next step toward Cabo Verde?",
-      "description": "Let Tuba Travel turn your first ideas into a clear, welcoming, and well-guided travel plan.",
-      "primaryAction": "Start your inquiry",
-      "secondaryAction": "See who we are"
+    "futurePlatform": {
+      "eyebrow": "Platform modules",
+      "title": "The TubaTour tourism marketplace foundation is being built now",
+      "description": "TubaTour is being structured as a full digital marketplace where travelers discover and book services, partners manage professional accounts, and the admin team controls quality, approvals, and growth.",
+      "label": "Platform foundation",
+      "items": [
+        {
+          "title": "Traveler booking inquiries",
+          "description": "Traveler accounts are being designed for discoverable listings, structured booking flows, saved trips, and booking history across Cape Verde services.",
+          "label": "Booking-ready structure"
+        },
+        {
+          "title": "Guide and driver profiles",
+          "description": "Local guides and transfer drivers are being modeled with professional profiles, specialties, language support, trust badges, and service publishing tools.",
+          "label": "Partner account management"
+        },
+        {
+          "title": "Hotels and Airbnb hosts",
+          "description": "Accommodation partners are being organized into a scalable marketplace structure with inventory presentation, guest support context, and booking-ready profile pages.",
+          "label": "Scalable catalog foundation"
+        },
+        {
+          "title": "Restaurants and local providers",
+          "description": "Food experiences, beach clubs, and curated local moments are being integrated into category-led discovery, partner promotion, and service management flows.",
+          "label": "Marketplace discovery"
+        },
+        {
+          "title": "Admin review and approval",
+          "description": "Admin workflows are being designed for partner approval, listing review, featured placement control, quality checks, and marketplace governance.",
+          "label": "Admin marketplace control"
+        },
+        {
+          "title": "Booking support across one system",
+          "description": "Tours, transfers, stays, and local recommendations are being unified into one multi-sided platform with accounts, bookings, messages, reviews, and payments.",
+          "label": "Integrated platform architecture"
+        }
+      ]
+    },
+    "partnerJourney": {
+      "eyebrow": "Partner onboarding",
+      "title": "How partners enter and grow inside the marketplace",
+      "description": "Partner onboarding is being structured as a professional account flow with verification, profile setup, service publishing, availability planning, bookings, communication, and payouts.",
+      "label": "Marketplace onboarding flow",
+      "steps": [
+        {
+          "title": "Apply as a provider",
+          "description": "A guide, driver, hotel, Airbnb host, restaurant, or local experience provider begins with a structured partner application."
+        },
+        {
+          "title": "Verification and approval",
+          "description": "TubaTour verifies the business, reviews service quality, confirms destination fit, and approves the provider into the marketplace."
+        },
+        {
+          "title": "Account setup and profile launch",
+          "description": "Approved partners configure their public profile, trust details, services, pricing structure, and marketplace presentation."
+        },
+        {
+          "title": "Publish services and availability",
+          "description": "Partners publish listings, define schedules, manage capacity, and prepare their services for traveler discovery and booking."
+        },
+        {
+          "title": "Receive bookings and payouts",
+          "description": "Travelers book services, partners manage customer communication, and TubaTour tracks commissions and payout readiness through the platform."
+        }
+      ]
+    },
+    "profilePreviews": {
+      "eyebrow": "Public partner profiles",
+      "title": "Professional profile pages for verified local partners",
+      "description": "Each approved provider is being structured around a public profile that helps travelers understand credibility, specialties, services, and booking fit at a glance.",
+      "label": "Partner profile system",
+      "items": [
+        {
+          "type": "Guide profile",
+          "name": "Ana Silva",
+          "location": "Santiago · Praia & Cidade Velha",
+          "services": "City tours, heritage walks, custom cultural discovery",
+          "specialties": "English, Portuguese, French · history and local life",
+          "badge": "Verified local guide",
+          "primaryAction": "View Profile",
+          "secondaryAction": "Request Booking"
+        },
+        {
+          "type": "Driver profile",
+          "name": "Mindelo Transfer Co.",
+          "location": "São Vicente · Airport and private driver support",
+          "services": "Airport pickup, hotel transfer, half-day driver service",
+          "specialties": "Arrival support · multi-stop routes · flexible pickup",
+          "badge": "Verified transfer partner",
+          "primaryAction": "View Profile",
+          "secondaryAction": "Request Booking"
+        },
+        {
+          "type": "Hotel / Airbnb profile",
+          "name": "Santa Maria Stay Collection",
+          "location": "Sal · Beach stays and local hosting",
+          "services": "Apartments, guest support, airport coordination",
+          "specialties": "Resort arrivals · remote check-in · host support",
+          "badge": "Verified stay partner",
+          "primaryAction": "View Profile",
+          "secondaryAction": "Request Booking"
+        },
+        {
+          "type": "Restaurant / experience profile",
+          "name": "Morabeza Table & Tours",
+          "location": "Boa Vista · Dining and curated local moments",
+          "services": "Food experiences, cultural evenings, private group hosting",
+          "specialties": "Creole dining · group events · local recommendations",
+          "badge": "Verified local experience",
+          "primaryAction": "View Profile",
+          "secondaryAction": "Request Booking"
+        }
+      ]
+    },
+    "promoSystem": {
+      "eyebrow": "Promotions and monetization",
+      "title": "Promo, referral, and commission tools for a scalable marketplace",
+      "description": "TubaTour is being structured with layered promotion codes, partner referrals, traveler incentives, featured placements, and protected automated commission tracking.",
+      "label": "Revenue system foundation",
+      "levels": [
+        {
+          "title": "Admin promo codes",
+          "description": "Marketplace-wide offers for launch campaigns, destination pushes, or seasonal travel incentives.",
+          "tag": "Marketplace"
+        },
+        {
+          "title": "Partner referral codes",
+          "description": "Guides, drivers, hosts, and experience providers can be connected to trackable referral flows linked to their own conversion and commission performance.",
+          "tag": "Partner"
+        },
+        {
+          "title": "Traveler referral codes",
+          "description": "Returning travelers can be supported through referral mechanics designed for repeat bookings and marketplace growth.",
+          "tag": "Traveler"
+        },
+        {
+          "title": "Campaign and service-specific codes",
+          "description": "Transfers, tours, hotels, and food experiences can each support campaign code structures aligned with service-level promotions and category marketing.",
+          "tag": "Campaign"
+        }
+      ],
+      "safeguards": [
+        {
+          "title": "Usage limits",
+          "description": "Controls for how many times a code can be used across travelers, partners, or campaigns."
+        },
+        {
+          "title": "Expiration dates",
+          "description": "Time-based expiration planning to keep travel campaigns controlled and relevant."
+        },
+        {
+          "title": "Owner tracking",
+          "description": "Every code structure is designed with traceable ownership, attribution, and audit visibility."
+        },
+        {
+          "title": "Fraud prevention",
+          "description": "Suspicious activity checks, admin oversight, and protected commission rules remain part of the monetization design."
+        },
+        {
+          "title": "Booking history tracking",
+          "description": "Booking and redemption history are being modeled for clearer reporting across travelers, partners, and campaigns."
+        },
+        {
+          "title": "Commission protection",
+          "description": "Promo and referral systems are being designed to preserve fair partner economics and automated commission tracking."
+        }
+      ],
+      "note": "Coupon validation, referrals, featured placements, and commission automation are being designed as first-class marketplace systems inside the platform architecture."
+    },
+    "adminPreview": {
+      "eyebrow": "Admin marketplace control",
+      "title": "Admin tools for quality, trust, growth, and marketplace operations",
+      "description": "TubaTour includes a dedicated admin control layer for approvals, content quality, commissions, featured placements, promotions, and platform oversight.",
+      "label": "Admin control layer",
+      "items": [
+        {
+          "title": "Approve or reject partners",
+          "description": "Review applications, check quality, and decide who becomes visible inside the marketplace.",
+          "label": "Approval workflow"
+        },
+        {
+          "title": "Review booking inquiries",
+          "description": "Track traveler requests, partner responses, and service outcomes across tours, transfers, and stays.",
+          "label": "Inquiry workflow"
+        },
+        {
+          "title": "Track promo and referral codes",
+          "description": "See how promo codes perform, who owns them, and which campaigns are helping the marketplace grow.",
+          "label": "Campaign planning"
+        },
+        {
+          "title": "Manage commissions and featured listings",
+          "description": "Protect marketplace economics while deciding which partners or experiences deserve featured visibility.",
+          "label": "Revenue operations"
+        },
+        {
+          "title": "Manage destinations and experiences",
+          "description": "Control how islands, tours, transfers, and dining moments appear across the traveler journey.",
+          "label": "Content operations"
+        },
+        {
+          "title": "Review suspicious activity",
+          "description": "Flag unusual behavior, protect partner trust, and keep the marketplace safer as volume increases.",
+          "label": "Trust and safety"
+        }
+      ]
+    },
+    "whatsappCta": {
+      "eyebrow": "Need quick help?",
+      "title": "Need help planning your Cabo Verde trip?",
+      "description": "Send us your travel date, island, group size, and what you want to experience. We'll help you choose the right tour, transfer, or local plan.",
+      "primaryAction": "Chat on WhatsApp",
+      "secondaryAction": "Send Inquiry"
+    },
+    "inquiry": {
+      "eyebrow": "Start your inquiry",
+      "title": "Tell us what you want to book or plan",
+      "description": "Use the form below to request airport transfers, tours, food experiences, hotel support, Airbnb coordination, or a custom Cape Verde travel plan."
     }
   },
   "destinations": {
     "intro": {
       "eyebrow": "Destinations",
       "title": "Find the island experience that feels right for you",
-      "description": "Each island offers a different mood, pace, and perspective. Tuba Travel helps you compare them more clearly so you can choose with confidence."
+      "description": "Each island offers a different mood, pace, and perspective. TubaTour helps you compare them more clearly so you can choose with confidence."
     },
     "cards": [
       {
@@ -123,7 +517,7 @@
       },
       {
         "slug": "santo-antao",
-        "title": "Santo Antao",
+        "title": "Santo Antão",
         "description": "A dramatic mountain island for travelers drawn to green valleys, village life, and memorable nature-led discovery.",
         "tag": "Mountains and nature"
       }
@@ -133,8 +527,8 @@
   "experiences": {
     "intro": {
       "eyebrow": "Experiences",
-      "title": "Choose the support and experiences that fit your trip best",
-      "description": "Whether you need island discovery, cultural depth, smooth logistics, or tailored planning, Tuba Travel helps shape your trip with thoughtful local support."
+      "title": "Browse bookable Cape Verde experiences and custom trip support",
+      "description": "Explore the tours and planning services travelers request most often through listings designed for availability, pricing visibility, traveler accounts, and booking-ready marketplace flows."
     },
     "selectionLabel": "Selected destination",
     "switchIslandLabel": "Recommended islands",
@@ -142,27 +536,53 @@
     "cards": [
       {
         "id": "island-tours",
-        "title": "Island Tours",
-        "description": "Guided island experiences that help you see the highlights, understand the atmosphere, and make the most of your time.",
-        "tag": "Discovery"
+        "title": "Tarrafal Beach Day Trip",
+        "description": "A scenic full-day Santiago outing that combines coastline, local stops, and beach time in Tarrafal.",
+        "tag": "Beach day",
+        "location": "Tarrafal, Santiago",
+        "duration": "Full day",
+        "price": "From $85",
+        "buttonLabel": "Book on WhatsApp"
       },
       {
         "id": "cultural-experiences",
-        "title": "Cultural Experiences",
-        "description": "Thoughtfully chosen moments that bring you closer to local music, food, heritage, and everyday island life.",
-        "tag": "Culture"
+        "title": "Cidade Velha Historical Tour",
+        "description": "Walk through Cabo Verde's UNESCO World Heritage story with a local guide who can bring context to every stop.",
+        "tag": "History",
+        "location": "Cidade Velha, Santiago",
+        "duration": "Half day",
+        "price": "From $55",
+        "buttonLabel": "Book on WhatsApp"
       },
       {
         "id": "airport-transfers",
-        "title": "Airport Transfers",
-        "description": "Reliable transfer support for smoother arrivals, calmer departures, and less travel stress.",
-        "tag": "Comfort"
+        "title": "Praia City & Culture Tour",
+        "description": "Discover markets, viewpoints, neighborhoods, food, music, and everyday Cabo Verdean life with local guidance.",
+        "tag": "City culture",
+        "location": "Praia, Santiago",
+        "duration": "2–3 hours",
+        "price": "From $45",
+        "buttonLabel": "Book on WhatsApp"
+      },
+      {
+        "id": "local-food-experience",
+        "title": "Local Food Experience",
+        "description": "Taste everyday Cabo Verde through local dishes, neighborhood spots, and food-led conversations with context.",
+        "tag": "Food",
+        "location": "Praia or Mindelo",
+        "duration": "2–3 hours",
+        "price": "From $40",
+        "buttonLabel": "Book on WhatsApp"
       },
       {
         "id": "personalized-travel-planning",
-        "title": "Personalized Travel Planning",
-        "description": "Tailored support for travelers who want a more seamless itinerary and a trip shaped around their priorities.",
-        "tag": "Planning"
+        "title": "Custom Island Travel Plan",
+        "description": "Tell us your dates, group, island, and travel style so TubaTour can shape a practical itinerary inside a structured planning and booking-ready workflow.",
+        "tag": "Custom plan",
+        "location": "Multiple islands",
+        "duration": "Flexible",
+        "price": "Custom quote",
+        "buttonLabel": "Book on WhatsApp"
       }
     ],
     "islands": {
@@ -175,6 +595,7 @@
         "cardOrder": [
           "cultural-experiences",
           "island-tours",
+          "local-food-experience",
           "personalized-travel-planning",
           "airport-transfers"
         ],
@@ -188,8 +609,8 @@
             "tag": "Heritage and culture"
           },
           "airport-transfers": {
-            "description": "Comfortable transfer support for arrivals and departures in Praia, helping the practical side of your trip feel easy from the start.",
-            "tag": "City arrivals"
+            "description": "A strong fit for Santiago travelers who want a shorter guided introduction to Praia's viewpoints, neighborhoods, music, and local rhythm.",
+            "tag": "City rhythm"
           },
           "personalized-travel-planning": {
             "description": "Useful for travelers who want to combine culture, history, and local encounters into a clearer Santiago itinerary.",
@@ -205,8 +626,9 @@
         "emphasis": "Recommended for beach stays, island ease, sea air, and smooth transfers",
         "cardOrder": [
           "island-tours",
-          "airport-transfers",
+          "local-food-experience",
           "personalized-travel-planning",
+          "airport-transfers",
           "cultural-experiences"
         ],
         "cardOverrides": {
@@ -219,8 +641,8 @@
             "tag": "Local moments"
           },
           "airport-transfers": {
-            "description": "One of the most practical choices for Sal, where a smooth arrival and departure adds to the island's effortless holiday feel.",
-            "tag": "Easy arrivals"
+            "description": "A lighter city-and-local-context style outing for travelers on Sal who want a little more than beach time without losing the relaxed pace.",
+            "tag": "Light discovery"
           },
           "personalized-travel-planning": {
             "description": "Ideal for balancing beach time, simple outings, and the right level of support without losing the easygoing rhythm of Sal.",
@@ -236,6 +658,7 @@
         "emphasis": "Recommended for music, urban charm, local encounters, and curated stays",
         "cardOrder": [
           "cultural-experiences",
+          "local-food-experience",
           "personalized-travel-planning",
           "island-tours",
           "airport-transfers"
@@ -250,8 +673,8 @@
             "tag": "Music and culture"
           },
           "airport-transfers": {
-            "description": "Reliable transfers that keep the logistics simple so you can focus on the island's character and social atmosphere.",
-            "tag": "Smooth logistics"
+            "description": "An easy way to move through Mindelo with local guidance, neighborhood texture, and a clearer sense of the city's social energy.",
+            "tag": "Urban encounters"
           },
           "personalized-travel-planning": {
             "description": "Especially valuable for creating a more intentional São Vicente stay around music, dining, local rhythm, and curated recommendations.",
@@ -269,6 +692,7 @@
           "island-tours",
           "personalized-travel-planning",
           "cultural-experiences",
+          "local-food-experience",
           "airport-transfers"
         ],
         "cardOverrides": {
@@ -281,8 +705,8 @@
             "tag": "Local context"
           },
           "airport-transfers": {
-            "description": "Useful for coordinating the movement around a more route-based trip, especially when timings and connections matter.",
-            "tag": "Route support"
+            "description": "A softer culture-and-place option that gives nature-focused travelers more everyday context between scenic routes and trail plans.",
+            "tag": "Village context"
           },
           "personalized-travel-planning": {
             "description": "Highly recommended for Santo Antão, where the right pacing, route choices, and overnight structure make a big difference.",
@@ -297,8 +721,9 @@
         "description": "Boa Vista is best approached with a lighter touch: simple logistics, beach-oriented support, and enough planning to keep the stay smooth without losing the sense of space.",
         "emphasis": "Recommended for calm beach stays, simple transfers, and easy planning",
         "cardOrder": [
-          "airport-transfers",
           "island-tours",
+          "airport-transfers",
+          "local-food-experience",
           "personalized-travel-planning",
           "cultural-experiences"
         ],
@@ -312,8 +737,8 @@
             "tag": "Gentle local insight"
           },
           "airport-transfers": {
-            "description": "A very relevant service for Boa Vista, where smooth arrivals and departures help preserve the island's calm and effortless feel.",
-            "tag": "Calm arrivals"
+            "description": "A simple local outing that gives calm-stay travelers a little more connection to the island beyond the beach rhythm.",
+            "tag": "Easy local outing"
           },
           "personalized-travel-planning": {
             "description": "Useful for shaping a peaceful, easygoing stay without overplanning, especially for longer beach escapes.",
@@ -330,6 +755,7 @@
         "cardOrder": [
           "island-tours",
           "cultural-experiences",
+          "local-food-experience",
           "personalized-travel-planning",
           "airport-transfers"
         ],
@@ -343,8 +769,8 @@
             "tag": "Island depth"
           },
           "airport-transfers": {
-            "description": "Useful practical support for a destination where well-planned movement helps the wider itinerary feel more seamless.",
-            "tag": "Travel coordination"
+            "description": "A guided cultural layer that helps Fogo travelers connect the dramatic landscape with towns, viewpoints, and lived local texture.",
+            "tag": "Guided perspective"
           },
           "personalized-travel-planning": {
             "description": "Highly relevant for Fogo, where a more tailored itinerary can bring together discovery, pacing, and the island's distinctive highlights.",
@@ -353,13 +779,139 @@
         }
       }
     },
-    "ctaButton": "Request this service"
+    "ctaButton": "Book on WhatsApp"
+  },
+  "transfers": {
+    "hero": {
+      "eyebrow": "Transfers",
+      "title": "Airport transfers and private driver support across Cape Verde",
+      "description": "TubaTour is building a transfer marketplace where travelers can discover services, review pricing, and move into a structured booking-ready flow."
+    },
+    "intro": "Choose the transfer service you need, review location and pricing context, and move into a structured traveler booking flow designed for availability planning, partner response, and secure payment-ready processing.",
+    "manualConfirmation": "Transfer bookings are being structured around availability visibility, partner response, traveler account history, and secure payment-ready checkout architecture.",
+    "items": [
+      {
+        "title": "Praia Airport Transfer",
+        "location": "Nelson Mandela Airport, Santiago",
+        "price": "From $35",
+        "description": "Private pickup to hotels, Airbnb stays, and meeting points in Praia with structured traveler and partner coordination.",
+        "buttonLabel": "Request Transfer"
+      },
+      {
+        "title": "Sal Airport Transfer",
+        "location": "Amílcar Cabral Airport, Sal",
+        "price": "From $30",
+        "description": "Reliable arrival support for resorts, apartments, and local stays with easy coordination before landing.",
+        "buttonLabel": "Request Transfer"
+      },
+      {
+        "title": "Boa Vista Airport Transfer",
+        "location": "Aristides Pereira Airport, Boa Vista",
+        "price": "From $30",
+        "description": "Simple airport pickup for hotel and beach-stay arrivals inside a transfer marketplace designed for availability, pricing clarity, and traveler account visibility.",
+        "buttonLabel": "Request Transfer"
+      },
+      {
+        "title": "Private Driver Service",
+        "location": "Santiago, Sal, and more",
+        "price": "Custom quote",
+        "description": "Request a private driver for multi-stop itineraries, hotel coordination, day routes, and travel support.",
+        "buttonLabel": "Request Driver"
+      }
+    ],
+    "privateDriver": {
+      "title": "Need a private driver instead of a simple transfer?",
+      "description": "Tell us the island, number of travelers, and route so the platform can evolve around driver availability, custom itinerary support, and structured booking flows.",
+      "buttonLabel": "Request a Private Driver"
+    },
+    "cta": {
+      "eyebrow": "Travel help",
+      "title": "Want us to help you choose the right airport transfer?",
+      "description": "Share your travel date, arrival airport, hotel or Airbnb location, and traveler count so TubaTour can connect you to the right transport provider inside the booking-ready platform flow.",
+      "primaryAction": "Book via WhatsApp",
+      "secondaryAction": "Send Inquiry"
+    }
+  },
+  "partners": {
+    "hero": {
+      "eyebrow": "Partner with TubaTour",
+      "title": "Grow with TubaTour as a trusted Cape Verde marketplace partner",
+      "description": "We connect travelers with reliable local guides, drivers, hotels, Airbnb hosts, restaurants, and experience providers through one scalable tourism marketplace platform."
+    },
+    "intro": "TubaTour is building a curated local partner network with professional accounts, profile management, service publishing, booking visibility, messaging, reviews, featured listings, and admin approval controls.",
+    "steps": [
+      {
+        "title": "Apply and verify your business",
+        "description": "Partners start with structured onboarding, business verification, service category selection, and account setup."
+      },
+      {
+        "title": "Set up your account and profile",
+        "description": "Approved providers configure their profile, service information, images, languages, specialties, and trust details."
+      },
+      {
+        "title": "Publish services and availability",
+        "description": "Partners define service details, category placement, pricing, schedules, and availability planning."
+      },
+      {
+        "title": "Receive bookings and payouts",
+        "description": "Partners receive bookings, manage customer communication, and operate inside a commission-aware marketplace workflow."
+      }
+    ],
+    "items": [
+      {
+        "type": "Guide",
+        "title": "Local tour guides",
+          "description": "Join to publish history tours, city tours, beach day trips, and custom island experiences through a trusted public partner profile.",
+        "benefits": [
+            "Manage profile, services, and availability",
+            "Receive bookings and traveler communication"
+        ],
+        "buttonLabel": "Partner Inquiry"
+      },
+      {
+        "type": "Driver",
+        "title": "Airport transfer drivers",
+          "description": "Join as a reliable transfer or private driver partner for arrivals, departures, route support, and booking-ready transport services.",
+        "benefits": [
+            "Publish transfer inventory and schedules",
+            "Receive bookings and payout-ready order records"
+        ],
+        "buttonLabel": "Partner Inquiry"
+      },
+      {
+        "type": "Host",
+        "title": "Hotels and Airbnb hosts",
+          "description": "Work with TubaTour as a trusted accommodation partner with stay profiles, traveler visibility, and structured partner account tools.",
+        "benefits": [
+            "Showcase stay options and guest support",
+            "Participate in reviews and featured discovery"
+        ],
+        "buttonLabel": "Partner Inquiry"
+      },
+      {
+        "type": "Food and experiences",
+        "title": "Restaurants and local experience providers",
+          "description": "Offer food experiences, beach clubs, activity ideas, and locally rooted moments through a structured marketplace profile and service catalog.",
+        "benefits": [
+            "Publish bookable service offerings",
+            "Grow through featured marketplace promotion"
+        ],
+        "buttonLabel": "Partner Inquiry"
+      }
+    ],
+    "cta": {
+      "eyebrow": "Join the network",
+      "title": "Think your business fits TubaTour?",
+      "description": "Use the partner entry flow to share your business type, island, and service details so TubaTour can move you into the marketplace onboarding and approval process.",
+      "primaryAction": "Partner Inquiry",
+      "secondaryAction": "Contact TubaTour"
+    }
   },
   "about": {
     "hero": {
-      "eyebrow": "About Tuba Travel",
-      "title": "A travel brand created to present Cabo Verde with warmth, trust, and quiet sophistication",
-      "description": "Tuba Travel is being built as a multilingual tourism platform that helps visitors discover Cabo Verde through clear guidance, local perspective, and a more personal sense of care from the very beginning.",
+      "eyebrow": "About TubaTour",
+      "title": "A travel marketplace built to make Cabo Verde easier to book with confidence",
+      "description": "TubaTour is a multilingual tourism marketplace platform that helps visitors discover Cabo Verde through clear guidance, verified local partners, and a more personal sense of care from the very beginning.",
       "highlights": [
         "Grounded in local destination knowledge",
         "Designed for international travelers",
@@ -368,47 +920,47 @@
     },
     "whoWeAre": {
       "title": "Who we are",
-      "description": "Tuba Travel is an emerging tourism brand focused on making Cabo Verde easier to understand, easier to explore, and more beautifully presented online. We believe planning a trip should feel reassuring as well as inspiring."
+      "description": "TubaTour is a tourism marketplace brand focused on making Cabo Verde easier to understand, easier to book, and more beautifully presented online. We believe planning a trip should feel reassuring as well as inspiring."
     },
     "vision": {
       "title": "Our vision",
-      "description": "Our vision is to create a more refined and welcoming gateway to Cabo Verde, where travelers can move from curiosity to confidence through trusted information, thoughtful experiences, and human support."
+      "description": "Our vision is to create a refined and welcoming gateway to Cabo Verde, where travelers move from curiosity to confidence through trusted partner profiles, structured booking flows, and thoughtful local experiences."
     },
     "approach": {
       "title": "Our approach",
-      "description": "We combine clarity, local sensitivity, and elegant simplicity. That means multilingual content, clean structure, and carefully chosen touchpoints that help travelers feel guided rather than overwhelmed."
+      "description": "We combine clarity, local sensitivity, and elegant simplicity. That means multilingual content, clean structure, partner-facing marketplace tools, and traveler touchpoints that help each booking feel guided rather than overwhelming."
     },
     "whyTravelWithUs": {
-      "title": "Why travel with Tuba Travel",
-      "description": "Because the journey begins long before arrival. Tuba Travel is being shaped to make that beginning feel smoother, more trustworthy, and more connected to the spirit of Cabo Verde itself."
+      "title": "Why travel with TubaTour",
+      "description": "Because the journey begins long before arrival. TubaTour is designed to make that beginning feel smoother, more trustworthy, and more connected to the spirit of Cabo Verde itself through one marketplace foundation."
     }
   },
   "contact": {
     "hero": {
       "eyebrow": "Contact",
       "title": "Tell us what kind of Cabo Verde journey you have in mind",
-      "description": "Whether you already know the island you want or you are still exploring possibilities, we are here to help shape the next step with clarity, warmth, and local understanding.",
-      "trustMessage": "Every inquiry is handled with care, clarity, and real attention to the details that matter to your trip."
+      "description": "Whether you already know the island you want or you are still exploring possibilities, TubaTour helps travelers and partners move into the next step with clarity, marketplace structure, and local understanding.",
+      "trustMessage": "Every request is handled through a platform foundation designed for booking clarity, partner coordination, and high-quality travel support."
     },
     "whatsapp": {
       "title": "Prefer to speak on WhatsApp?",
-      "description": "For quicker questions, early ideas, or a more direct conversation, WhatsApp is often the easiest way to begin.",
+      "description": "Use TubaTour messaging channels for early booking questions, partner onboarding requests, or direct marketplace support.",
       "button": "Chat on WhatsApp",
-      "phone": "+238 991 00 00"
+      "phone": "Official TubaTour business contact is handled through secure platform support channels"
     },
     "email": {
       "title": "Would you rather write by email?",
-      "description": "Share your travel ideas, preferred destination, or service needs and we will continue the conversation with care.",
-      "button": "Email Tuba Travel",
+      "description": "Share your travel plans, booking needs, or platform questions and the TubaTour team will continue the conversation with care.",
+      "button": "Email TubaTour",
       "address": "hello@tubatravel.com"
     },
     "form": {
-      "title": "Start planning your trip with us",
-      "description": "Share a few details about your trip so we can reply with guidance that feels relevant, well prepared, and easy to move forward with.",
+      "title": "Plan your Cabo Verde booking",
+      "description": "Tell us your island, dates, group size, and the type of service you want so TubaTour can route your request into the right booking or partner workflow.",
       "submitButton": "Send my inquiry",
       "submittingButton": "Sending...",
       "successTitle": "Your inquiry has been received",
-      "successDescription": "Thank you for contacting Tuba Travel. We have received your details and will follow up as soon as possible.",
+      "successDescription": "Thank you for contacting TubaTour. We have received your details and will follow up as soon as possible.",
       "resetButton": "Send another inquiry",
       "errorMessage": "We could not send your inquiry right now. Please try again in a moment or contact us by WhatsApp or email.",
       "validation": {
@@ -431,11 +983,30 @@
         },
         "preferredDestination": {
           "label": "Preferred Destination",
-          "placeholder": "Which island or destination interests you most?"
+          "placeholder": "Which island or destination interests you most?",
+          "options": [
+            "Santiago",
+            "Sal",
+            "Santo Antão",
+            "São Vicente",
+            "Boa Vista",
+            "Fogo",
+            "Not sure yet"
+          ]
         },
         "serviceInterestedIn": {
           "label": "Service Interested In",
-          "placeholder": "Tours, transfers, travel planning, or another service"
+          "placeholder": "Tours, transfers, stays, food experiences, or another service",
+          "options": [
+            "Airport Transfer",
+            "City Tour",
+            "Beach Day Trip",
+            "Cultural Experience",
+            "Food Experience",
+            "Hotel or Airbnb Support",
+            "Restaurant Recommendation",
+            "Custom Travel Plan"
+          ]
         },
         "travelDate": {
           "label": "Travel Date",

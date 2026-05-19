@@ -9,19 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sand: "#F6F1E8",
-        ocean: "#0F5C78",
-        ink: "#102A43",
-        sun: "#D9A441",
+        sand: "#F7E6B2",
+        ocean: "#0EA5E9",
+        ink: "#070B12",
+        sun: "#F5C76B",
         brand: {
-          black: "#000000",
-          charcoal: "#0A0A0A",
-          panel: "#111111",
-          red: "#E1062C",
-          "red-deep": "#8B0018",
-          text: "#FFFFFF",
-          muted: "#B3B3B3",
-          "muted-soft": "#8A8A8A"
+          black: "#070B12",
+          charcoal: "#0B1B2B",
+          panel: "#111A24",
+          red: "#0EA5E9",
+          "red-deep": "#0F766E",
+          teal: "#0F766E",
+          turquoise: "#38BDF8",
+          gold: "#F5C76B",
+          sand: "#F7E6B2",
+          coral: "#F9735B",
+          text: "#F8FAFC",
+          muted: "#CBD5E1",
+          "muted-soft": "#AFC7D1"
         }
       },
       fontFamily: {

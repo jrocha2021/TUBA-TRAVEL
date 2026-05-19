@@ -1,18 +1,23 @@
 {
   "brand": {
-    "name": "Tuba Travel",
-    "location": "Cabo Verde"
+    "name": "TubaTour",
+    "location": "Experi?ncias em Cabo Verde"
   },
   "nav": {
     "home": "Início",
     "destinations": "Destinos",
     "experiences": "Experiências",
     "about": "Sobre",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "bookNow": "Reservar"
   },
   "footer": {
-    "tagline": "Viagens em Cabo Verde pensadas com acolhimento, elegância e sensibilidade local.",
-    "rights": "Todos os direitos reservados."
+    "tagline": "Tours, transfers e experi?ncias locais aut?nticas em Cabo Verde.",
+    "rights": "Todos os direitos reservados.",
+    "description": "Apoio local premium para reservar transfers de aeroporto, tours, dias de praia, experi?ncias culturais e planeamento personalizado.",
+    "quickLinksTitle": "Links r?pidos",
+    "contactTitle": "Contact",
+    "whatsapp": "Contacto oficial da TubaTour em breve"
   },
   "common": {
     "explore": "Explorar Cabo Verde",
@@ -22,7 +27,7 @@
     "hero": {
       "eyebrow": "Cabo Verde, revelado com cuidado",
       "title": "Viaje por Cabo Verde com acolhimento, elegância e confiança desde o primeiro momento",
-      "description": "A Tuba Travel foi pensada para viajantes que procuram mais do que informação. Reunimos conhecimento local, experiências memoráveis e uma presença premium e tranquila para que cada viagem comece com clareza.",
+      "description": "A TubaTour foi pensada para viajantes que procuram mais do que informação. Reunimos conhecimento local, experiências memoráveis e uma presença premium e tranquila para que cada viagem comece com clareza.",
       "primaryAction": "Encontrar a sua ilha",
       "secondaryAction": "Planear experiências",
       "highlights": [
@@ -34,7 +39,7 @@
     "destinations": {
       "eyebrow": "Destinos em destaque",
       "title": "Escolha a ilha que melhor combina com a viagem que procura",
-      "description": "Entre descanso à beira-mar, profundidade cultural e paisagens marcantes, a Tuba Travel ajuda cada viajante a encontrar a ilha certa para o seu ritmo e estilo.",
+      "description": "Entre descanso à beira-mar, profundidade cultural e paisagens marcantes, a TubaTour ajuda cada viajante a encontrar a ilha certa para o seu ritmo e estilo.",
       "items": [
         {
           "title": "Sal",
@@ -47,7 +52,7 @@
           "tag": "Cultura e profundidade"
         },
         {
-          "title": "Santo Antao",
+          "title": "Santo Antão",
           "description": "Pensada para quem se sente atraído por paisagens de montanha, ar puro e descobertas inesquecíveis na natureza.",
           "tag": "Natureza e encanto"
         }
@@ -78,7 +83,7 @@
     "whyChooseUs": {
       "eyebrow": "Por que escolher-nos",
       "title": "Uma marca de viagens pensada para inspirar confiança, proximidade e elegância",
-      "description": "A Tuba Travel está a ser construída para tornar o planeamento da viagem mais simples, mais humano e mais tranquilizador desde o primeiro contacto.",
+      "description": "A TubaTour está a ser construída para tornar o planeamento da viagem mais simples, mais humano e mais tranquilizador desde o primeiro contacto.",
       "items": [
         {
           "title": "Experiência multilingue fluida",
@@ -97,7 +102,7 @@
     "cta": {
       "eyebrow": "Planeie com confiança",
       "title": "Pronto para dar o próximo passo para Cabo Verde?",
-      "description": "Deixe a Tuba Travel transformar a sua primeira intenção numa próxima etapa clara, acolhedora e bem orientada.",
+      "description": "Deixe a TubaTour transformar a sua primeira intenção numa próxima etapa clara, acolhedora e bem orientada.",
       "primaryAction": "Começar o pedido",
       "secondaryAction": "Conhecer a nossa história"
     }
@@ -106,7 +111,7 @@
     "intro": {
       "eyebrow": "Destinos",
       "title": "Encontre a experiência de ilha certa para si",
-      "description": "Cada ilha tem um ritmo, uma atmosfera e uma identidade próprios. A Tuba Travel ajuda a comparar com mais clareza para escolher com confiança."
+      "description": "Cada ilha tem um ritmo, uma atmosfera e uma identidade próprios. A TubaTour ajuda a comparar com mais clareza para escolher com confiança."
     },
     "cards": [
       {
@@ -123,7 +128,7 @@
       },
       {
         "slug": "santo-antao",
-        "title": "Santo Antao",
+        "title": "Santo Antão",
         "description": "Uma ilha de montanha e vales para viajantes que procuram natureza, aldeias e uma descoberta marcada pela paisagem.",
         "tag": "Montanhas e natureza"
       }
@@ -134,7 +139,7 @@
     "intro": {
       "eyebrow": "Experiências",
       "title": "Escolha os serviços e experiências que melhor se ajustam à sua viagem",
-      "description": "Descoberta das ilhas, profundidade cultural, logística tranquila ou apoio à medida: a Tuba Travel ajuda a construir uma viagem com apoio local atencioso."
+      "description": "Descoberta das ilhas, profundidade cultural, logística tranquila ou apoio à medida: a TubaTour ajuda a construir uma viagem com apoio local atencioso."
     },
     "selectionLabel": "Destino selecionado",
     "switchIslandLabel": "Ilhas recomendadas",
@@ -357,9 +362,9 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "Sobre a Tuba Travel",
+      "eyebrow": "Sobre a TubaTour",
       "title": "Uma marca de viagens criada para apresentar Cabo Verde com acolhimento, confiança e sofisticação discreta",
-      "description": "A Tuba Travel está a ser construída como uma plataforma de turismo multilingue que ajuda os visitantes a descobrir Cabo Verde através de informação clara, perspetiva local e um acompanhamento mais humano.",
+      "description": "A TubaTour está a ser construída como uma plataforma de turismo multilingue que ajuda os visitantes a descobrir Cabo Verde através de informação clara, perspetiva local e um acompanhamento mais humano.",
       "highlights": [
         "Baseada em conhecimento real dos destinos",
         "Pensada para viajantes internacionais",
@@ -368,7 +373,7 @@
     },
     "whoWeAre": {
       "title": "Quem somos",
-      "description": "A Tuba Travel é uma marca de turismo em crescimento que quer tornar Cabo Verde mais claro, mais inspirador e melhor apresentado online. Acreditamos que planear uma viagem deve tranquilizar tanto quanto entusiasmar."
+      "description": "A TubaTour é uma marca de turismo em crescimento que quer tornar Cabo Verde mais claro, mais inspirador e melhor apresentado online. Acreditamos que planear uma viagem deve tranquilizar tanto quanto entusiasmar."
     },
     "vision": {
       "title": "A nossa visão",
@@ -379,8 +384,8 @@
       "description": "Juntamos clareza, sensibilidade local e simplicidade elegante. Isso traduz-se em conteúdo multilingue, estrutura limpa e pontos de contacto pensados para orientar sem confundir."
     },
     "whyTravelWithUs": {
-      "title": "Por que viajar com a Tuba Travel",
-      "description": "Porque a viagem começa muito antes da chegada. A Tuba Travel quer tornar esse início mais fluido, mais fiável e mais ligado ao espírito de Cabo Verde."
+      "title": "Por que viajar com a TubaTour",
+      "description": "Porque a viagem começa muito antes da chegada. A TubaTour quer tornar esse início mais fluido, mais fiável e mais ligado ao espírito de Cabo Verde."
     }
   },
   "contact": {
@@ -394,12 +399,12 @@
       "title": "Prefere começar no WhatsApp?",
       "description": "Para uma pergunta rápida, uma primeira ideia de viagem ou uma conversa mais direta, o WhatsApp é muitas vezes a forma mais simples de começar.",
       "button": "Falar no WhatsApp",
-      "phone": "+238 991 00 00"
+      "phone": "Contacto oficial da TubaTour em breve"
     },
     "email": {
       "title": "Prefere escrever por email?",
       "description": "Partilhe connosco as suas ideias de viagem, o destino pretendido ou as necessidades do seu grupo e continuaremos a conversa com cuidado.",
-      "button": "Enviar email à Tuba Travel",
+      "button": "Enviar email ? TubaTour",
       "address": "hello@tubatravel.com"
     },
     "form": {
@@ -408,7 +413,7 @@
       "submitButton": "Enviar o meu pedido",
       "submittingButton": "A enviar...",
       "successTitle": "O seu pedido foi recebido",
-      "successDescription": "Obrigado por contactar a Tuba Travel. Recebemos os seus dados e entraremos em contacto consigo assim que possível.",
+      "successDescription": "Obrigado por contactar a TubaTour. Recebemos os seus dados e entraremos em contacto consigo assim que possível.",
       "resetButton": "Enviar outro pedido",
       "errorMessage": "Não foi possível enviar o seu pedido neste momento. Tente novamente dentro de instantes ou contacte-nos por WhatsApp ou email.",
       "validation": {
@@ -431,11 +436,28 @@
         },
         "preferredDestination": {
           "label": "Destino preferido",
-          "placeholder": "Que ilha ou destino lhe desperta mais interesse?"
+          "placeholder": "Que ilha ou destino lhe desperta mais interesse?",
+          "options": [
+            "Santiago",
+            "Sal",
+            "Santo Antão",
+            "São Vicente",
+            "Boa Vista",
+            "Fogo",
+            "Ainda n?o tenho a certeza"
+          ]
         },
         "serviceInterestedIn": {
           "label": "Serviço de interesse",
-          "placeholder": "Tours, transfers, planeamento ou outro serviço"
+          "placeholder": "Tours, transfers, planeamento ou outro serviço",
+          "options": [
+            "Transfer de aeroporto",
+            "Tour pela cidade",
+            "Dia de praia",
+            "Experi?ncia cultural",
+            "Experi?ncia gastron?mica",
+            "Plano de viagem personalizado"
+          ]
         },
         "travelDate": {
           "label": "Data da viagem",

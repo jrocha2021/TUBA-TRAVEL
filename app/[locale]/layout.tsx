@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import type { Locale } from "@/lib/i18n";
 import { getMessages, isValidLocale, locales } from "@/lib/i18n";
+import CookieBanner from "@/components/cookie-banner";
+import FloatingWhatsApp from "@/components/floating-whatsapp";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
@@ -30,8 +32,10 @@ export default function LocaleLayout({
   return (
     <div className="page-shell">
       <Navbar locale={locale} messages={messages} />
-      <main className="flex-1 py-10">{children}</main>
-      <Footer messages={messages} />
+      <main className="flex-1 pb-28 pt-5 sm:pb-24 sm:pt-6">{children}</main>
+      <Footer locale={locale as Locale} messages={messages} />
+      <FloatingWhatsApp />
+      <CookieBanner locale={locale as Locale} />
     </div>
   );
 }

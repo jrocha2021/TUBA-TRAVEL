@@ -13,7 +13,7 @@ type IslandExperienceImages = {
 const userPhotoLibrary = {
   homeHero: {
     src: "/images/tubatour/home-hero.jpg",
-    alt: "Cabo Verde flag photo used prominently in the Tuba Travel homepage hero"
+    alt: "Cabo Verde flag photo used prominently in the TubaTour homepage hero"
   },
   destinationSantiago: {
     src: "/images/tubatour/destination-santiago.jpg",
@@ -129,15 +129,19 @@ const caboVerdeImageLibrary = {
 export const siteImages = {
   home: {
     hero: userPhotoLibrary.homeHero,
-    destinations: [
-      userPhotoLibrary.destinationSal,
-      userPhotoLibrary.destinationSantiago,
-      userPhotoLibrary.destinationSantoAntao
-    ],
-    experiences: [
-      caboVerdeImageLibrary.caboVerdeShoreline,
+    transfers: userPhotoLibrary.experienceSantiago,
+    popularExperiences: [
       userPhotoLibrary.experienceSantiago,
-      caboVerdeImageLibrary.santoAntaoTrails
+      caboVerdeImageLibrary.santiagoCulture,
+      userPhotoLibrary.destinationSantiago,
+      caboVerdeImageLibrary.santiagoCity
+    ],
+    destinations: [
+      userPhotoLibrary.destinationSantiago,
+      userPhotoLibrary.destinationSal,
+      userPhotoLibrary.destinationSantoAntao,
+      userPhotoLibrary.experienceSaoVicente,
+      caboVerdeImageLibrary.boaVistaCalm
     ]
   },
   destinations: {
@@ -154,6 +158,7 @@ export const siteImages = {
       "island-tours": caboVerdeImageLibrary.santoAntaoTrails,
       "cultural-experiences": userPhotoLibrary.experienceSantiago,
       "airport-transfers": caboVerdeImageLibrary.saoVicenteCoast,
+      "local-food-experience": caboVerdeImageLibrary.saoVicenteMarket,
       "personalized-travel-planning": caboVerdeImageLibrary.salCalm
     },
     islands: {
@@ -172,6 +177,7 @@ export const siteImages = {
             src: "/images/experiences/santiago-airport-transfers.jpg",
             alt: caboVerdeImageLibrary.santiagoLocalLife.alt
           },
+          "local-food-experience": userPhotoLibrary.destinationSantiago,
           "personalized-travel-planning": {
             src: "/images/experiences/santiago-personalized-travel-planning.jpg",
             alt: caboVerdeImageLibrary.santiagoCity.alt
@@ -193,6 +199,7 @@ export const siteImages = {
             src: "/images/experiences/sal-airport-transfers.jpg",
             alt: caboVerdeImageLibrary.salAirport.alt
           },
+          "local-food-experience": caboVerdeImageLibrary.salVillage,
           "personalized-travel-planning": {
             src: "/images/experiences/sal-personalized-travel-planning.jpg",
             alt: caboVerdeImageLibrary.salSeaPoint.alt
@@ -214,6 +221,7 @@ export const siteImages = {
             src: "/images/experiences/sao-vicente-airport-transfers.jpg",
             alt: caboVerdeImageLibrary.saoVicenteCoast.alt
           },
+          "local-food-experience": caboVerdeImageLibrary.saoVicenteMarket,
           "personalized-travel-planning": {
             src: "/images/experiences/sao-vicente-personalized-travel-planning.jpg",
             alt: caboVerdeImageLibrary.saoVicenteArts.alt
@@ -226,6 +234,7 @@ export const siteImages = {
           "island-tours": caboVerdeImageLibrary.santoAntaoTrails,
           "cultural-experiences": caboVerdeImageLibrary.santiagoCulture,
           "airport-transfers": caboVerdeImageLibrary.santoAntaoTrails,
+          "local-food-experience": caboVerdeImageLibrary.santiagoCulture,
           "personalized-travel-planning": caboVerdeImageLibrary.santoAntaoTrails
         }
       },
@@ -235,6 +244,7 @@ export const siteImages = {
           "island-tours": caboVerdeImageLibrary.boaVistaCalm,
           "cultural-experiences": caboVerdeImageLibrary.boaVistaCalm,
           "airport-transfers": caboVerdeImageLibrary.boaVistaCalm,
+          "local-food-experience": caboVerdeImageLibrary.boaVistaCalm,
           "personalized-travel-planning": caboVerdeImageLibrary.boaVistaCalm
         }
       },
@@ -244,6 +254,7 @@ export const siteImages = {
           "island-tours": caboVerdeImageLibrary.fogoVolcano,
           "cultural-experiences": caboVerdeImageLibrary.santiagoCulture,
           "airport-transfers": caboVerdeImageLibrary.fogoVolcano,
+          "local-food-experience": caboVerdeImageLibrary.santiagoCulture,
           "personalized-travel-planning": caboVerdeImageLibrary.fogoVolcano
         }
       }

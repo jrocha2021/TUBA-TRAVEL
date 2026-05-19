@@ -13,6 +13,7 @@ export const experienceCardIds = [
   "island-tours",
   "cultural-experiences",
   "airport-transfers",
+  "local-food-experience",
   "personalized-travel-planning"
 ] as const;
 

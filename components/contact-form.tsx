@@ -76,7 +76,7 @@ export default function ContactForm({ messages }: ContactFormProps) {
 
   if (isSubmitted) {
     return (
-      <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+      <div className="rounded-[2rem] border border-white/15 bg-white/[0.08] p-6 backdrop-blur-xl sm:p-8">
         <h3 className="text-2xl font-semibold tracking-tight text-white">
           {messages.successTitle}
         </h3>
@@ -94,51 +94,71 @@ export default function ContactForm({ messages }: ContactFormProps) {
     );
   }
 
+  const fieldClassName =
+    "w-full rounded-2xl border border-white/15 bg-white/[0.08] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-turquoise focus:bg-white/[0.12] focus:shadow-[0_0_0_4px_rgba(34,211,238,0.12)]";
+
+  function renderTextField(
+    field: keyof ContactFormValues,
+    type: "text" | "email" | "date" = "text"
+  ) {
+    const config = messages.fields[field];
+    const options = config.options;
+
+    if (options?.length) {
+      return (
+        <select
+          value={values[field]}
+          onChange={(event) => handleChange(field, event.target.value)}
+          className={fieldClassName}
+        >
+          <option value="">{config.placeholder}</option>
+          {options.map((option) => (
+            <option key={option} value={option} className="bg-brand-panel text-white">
+              {option}
+            </option>
+          ))}
+        </select>
+      );
+    }
+
+    return (
+      <input
+        type={type}
+        value={values[field]}
+        onChange={(event) => handleChange(field, event.target.value)}
+        placeholder={config.placeholder}
+        className={fieldClassName}
+      />
+    );
+  }
+
   return (
     <form onSubmit={handleSubmit} noValidate className="grid gap-5 md:grid-cols-2">
       {submitError ? (
-        <div className="md:col-span-2 rounded-2xl border border-brand-red/30 bg-brand-red/10 px-4 py-3 text-sm text-white">
+        <div className="md:col-span-2 rounded-2xl border border-brand-gold/30 bg-brand-gold/10 px-4 py-3 text-sm text-white">
           {submitError}
         </div>
       ) : null}
 
       <label className="space-y-2">
         <span className="text-sm font-medium text-white">{messages.fields.fullName.label}</span>
-        <input
-          type="text"
-          value={values.fullName}
-          onChange={(event) => handleChange("fullName", event.target.value)}
-          placeholder={messages.fields.fullName.placeholder}
-          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
-        />
-        {errors.fullName ? <p className="text-sm text-brand-red">{errors.fullName}</p> : null}
+        {renderTextField("fullName")}
+        {errors.fullName ? <p className="text-sm text-brand-gold">{errors.fullName}</p> : null}
       </label>
 
       <label className="space-y-2">
         <span className="text-sm font-medium text-white">{messages.fields.email.label}</span>
-        <input
-          type="email"
-          value={values.email}
-          onChange={(event) => handleChange("email", event.target.value)}
-          placeholder={messages.fields.email.placeholder}
-          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
-        />
-        {errors.email ? <p className="text-sm text-brand-red">{errors.email}</p> : null}
+        {renderTextField("email", "email")}
+        {errors.email ? <p className="text-sm text-brand-gold">{errors.email}</p> : null}
       </label>
 
       <label className="space-y-2">
         <span className="text-sm font-medium text-white">
           {messages.fields.whatsappNumber.label}
         </span>
-        <input
-          type="text"
-          value={values.whatsappNumber}
-          onChange={(event) => handleChange("whatsappNumber", event.target.value)}
-          placeholder={messages.fields.whatsappNumber.placeholder}
-          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
-        />
+        {renderTextField("whatsappNumber")}
         {errors.whatsappNumber ? (
-          <p className="text-sm text-brand-red">{errors.whatsappNumber}</p>
+          <p className="text-sm text-brand-gold">{errors.whatsappNumber}</p>
         ) : null}
       </label>
 
@@ -146,15 +166,9 @@ export default function ContactForm({ messages }: ContactFormProps) {
         <span className="text-sm font-medium text-white">
           {messages.fields.preferredDestination.label}
         </span>
-        <input
-          type="text"
-          value={values.preferredDestination}
-          onChange={(event) => handleChange("preferredDestination", event.target.value)}
-          placeholder={messages.fields.preferredDestination.placeholder}
-          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
-        />
+        {renderTextField("preferredDestination")}
         {errors.preferredDestination ? (
-          <p className="text-sm text-brand-red">{errors.preferredDestination}</p>
+          <p className="text-sm text-brand-gold">{errors.preferredDestination}</p>
         ) : null}
       </label>
 
@@ -162,42 +176,25 @@ export default function ContactForm({ messages }: ContactFormProps) {
         <span className="text-sm font-medium text-white">
           {messages.fields.serviceInterestedIn.label}
         </span>
-        <input
-          type="text"
-          value={values.serviceInterestedIn}
-          onChange={(event) => handleChange("serviceInterestedIn", event.target.value)}
-          placeholder={messages.fields.serviceInterestedIn.placeholder}
-          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
-        />
+        {renderTextField("serviceInterestedIn")}
         {errors.serviceInterestedIn ? (
-          <p className="text-sm text-brand-red">{errors.serviceInterestedIn}</p>
+          <p className="text-sm text-brand-gold">{errors.serviceInterestedIn}</p>
         ) : null}
       </label>
 
       <label className="space-y-2">
         <span className="text-sm font-medium text-white">{messages.fields.travelDate.label}</span>
-        <input
-          type="date"
-          value={values.travelDate}
-          onChange={(event) => handleChange("travelDate", event.target.value)}
-          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition focus:border-brand-red focus:bg-white/[0.05]"
-        />
-        {errors.travelDate ? <p className="text-sm text-brand-red">{errors.travelDate}</p> : null}
+        {renderTextField("travelDate", "date")}
+        {errors.travelDate ? <p className="text-sm text-brand-gold">{errors.travelDate}</p> : null}
       </label>
 
       <label className="space-y-2 md:col-span-2">
         <span className="text-sm font-medium text-white">
           {messages.fields.numberOfTravelers.label}
         </span>
-        <input
-          type="text"
-          value={values.numberOfTravelers}
-          onChange={(event) => handleChange("numberOfTravelers", event.target.value)}
-          placeholder={messages.fields.numberOfTravelers.placeholder}
-          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
-        />
+        {renderTextField("numberOfTravelers")}
         {errors.numberOfTravelers ? (
-          <p className="text-sm text-brand-red">{errors.numberOfTravelers}</p>
+          <p className="text-sm text-brand-gold">{errors.numberOfTravelers}</p>
         ) : null}
       </label>
 
@@ -208,16 +205,16 @@ export default function ContactForm({ messages }: ContactFormProps) {
           value={values.message}
           onChange={(event) => handleChange("message", event.target.value)}
           placeholder={messages.fields.message.placeholder}
-          className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-brand-muted-soft focus:border-brand-red focus:bg-white/[0.05]"
+          className={fieldClassName}
         />
-        {errors.message ? <p className="text-sm text-brand-red">{errors.message}</p> : null}
+        {errors.message ? <p className="text-sm text-brand-gold">{errors.message}</p> : null}
       </label>
 
       <div className="md:col-span-2">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="brand-primary-button disabled:cursor-not-allowed disabled:bg-brand-red/70"
+          className="brand-primary-button disabled:cursor-not-allowed disabled:opacity-70"
         >
           {isSubmitting ? messages.submittingButton : messages.submitButton}
         </button>

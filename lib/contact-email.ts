@@ -25,7 +25,7 @@ export function createContactEmail(values: ContactFormValues) {
 
   const html = `
     <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #102a43;">
-      <h2 style="margin-bottom: 16px;">New Tuba Travel inquiry</h2>
+      <h2 style="margin-bottom: 16px;">New TubaTour inquiry</h2>
       <table style="border-collapse: collapse; width: 100%;">
         <tbody>
           ${entries
@@ -48,7 +48,7 @@ export function createContactEmail(values: ContactFormValues) {
   `;
 
   return {
-    subject: `New inquiry from ${values.fullName}`,
+    subject: `New TubaTour inquiry from ${values.fullName}`,
     text,
     html
   };

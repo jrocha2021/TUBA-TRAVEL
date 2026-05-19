@@ -43,8 +43,8 @@ export default function AboutPage({ params }: AboutPageProps) {
               <ImagePanel image={siteImages.about.hero} aspect="portrait" priority />
               {messages.about.hero.highlights.map((highlight) => (
                 <div key={highlight} className="glass-line rounded-3xl p-5">
-                  <p className="text-sm uppercase tracking-[0.24em] text-brand-red/85">
-                    Tuba Travel
+                  <p className="text-sm uppercase tracking-[0.24em] text-brand-gold">
+                    TubaTour
                   </p>
                   <p className="mt-3 text-lg font-medium text-white">{highlight}</p>
                 </div>
@@ -74,7 +74,7 @@ export default function AboutPage({ params }: AboutPageProps) {
             <div className="grid gap-6 md:grid-cols-2">
               {sections.slice(1).map((section, index) => (
                 <article key={section.title} className="soft-panel p-6">
-                  <p className="text-sm uppercase tracking-[0.24em] text-brand-red">
+                  <p className="text-sm uppercase tracking-[0.24em] text-brand-gold">
                     0{index + 2}
                   </p>
                   <h2 className="mt-4 text-2xl font-semibold tracking-tight text-white">
