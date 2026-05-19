@@ -36,12 +36,12 @@ export default function Navbar({ locale, messages }: NavbarProps) {
 
   return (
     <header className="sticky top-0 z-30 pt-1 sm:pt-1.5">
-      <div className="flex flex-col gap-2 rounded-[1.25rem] border border-white/15 bg-[linear-gradient(180deg,rgba(0,0,0,0.72),rgba(10,12,10,0.58))] px-4 py-1.5 shadow-[0_16px_36px_rgba(0,0,0,0.22)] backdrop-blur-xl lg:flex-row lg:items-center lg:gap-2 lg:px-4 lg:py-1 xl:px-5">
-        <div className="flex items-center justify-between gap-3 lg:shrink-0 lg:pr-0">
+      <div className="flex flex-col gap-1.5 rounded-[1.1rem] border border-white/15 bg-[linear-gradient(180deg,rgba(0,0,0,0.72),rgba(10,12,10,0.58))] px-3.5 py-1.25 shadow-[0_16px_36px_rgba(0,0,0,0.22)] backdrop-blur-xl lg:flex-row lg:items-center lg:gap-2 lg:rounded-[1.25rem] lg:px-4 lg:py-1 xl:px-5">
+        <div className="flex items-center justify-between gap-2 lg:shrink-0 lg:pr-0">
           <div className="flex items-center">
             <Link
               href={`/${locale}`}
-              className="inline-flex w-[210px] items-center transition-opacity hover:opacity-90 sm:w-[228px] lg:w-[360px] xl:w-[388px]"
+              className="inline-flex w-[186px] items-center transition-opacity hover:opacity-90 sm:w-[204px] lg:w-[360px] xl:w-[388px]"
               onClick={() => setIsMenuOpen(false)}
             >
               <Image
@@ -60,14 +60,14 @@ export default function Navbar({ locale, messages }: NavbarProps) {
               href={siteConfig.whatsappPlanUrl}
               target="_blank"
               rel="noreferrer"
-              className="brand-primary-button inline-flex items-center !px-4 !py-[0.4rem] text-xs"
+              className="brand-primary-button inline-flex shrink-0 items-center whitespace-nowrap !px-3.5 !py-[0.35rem] text-[11px]"
             >
               {messages.nav.bookNow}
             </a>
             <button
               type="button"
               onClick={() => setIsMenuOpen((current) => !current)}
-              className="inline-flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-full border border-white/15 bg-white/[0.08] text-white shadow-[0_10px_22px_rgba(0,0,0,0.16)]"
+              className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/[0.08] text-white shadow-[0_10px_22px_rgba(0,0,0,0.16)]"
               aria-label="Toggle navigation"
               aria-expanded={isMenuOpen}
             >
@@ -79,7 +79,7 @@ export default function Navbar({ locale, messages }: NavbarProps) {
         <div
           className={`${
             isMenuOpen ? "flex" : "hidden"
-          } min-w-0 flex-col gap-2.5 lg:flex lg:flex-1 lg:flex-row lg:items-center lg:gap-2 xl:gap-2.5`}
+          } min-w-0 flex-col gap-2 lg:flex lg:flex-1 lg:flex-row lg:items-center lg:gap-2 xl:gap-2.5`}
         >
           <nav className="no-scrollbar flex items-center gap-1.5 overflow-x-auto pb-0.5 text-[13px] font-medium text-white/80 lg:min-w-0 lg:flex-1 lg:flex-nowrap lg:justify-start lg:overflow-visible lg:pb-0 lg:-ml-1 lg:text-sm">
             {links.map((link) => (
