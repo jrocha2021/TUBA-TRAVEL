@@ -308,7 +308,7 @@ export default function HomePage({ params }: HomePageProps) {
         </section>
 
         {locale === "en" ? (
-          <section id="world-cup-promo" className="section-space scroll-mt-36">
+          <section id="world-cup-promo" className="section-anchor-offset section-space pt-3 sm:pt-4">
             <div className="overflow-hidden rounded-[2.35rem] border border-white/12 bg-[linear-gradient(135deg,rgba(11,27,43,0.96),rgba(7,11,18,0.98)_42%,rgba(7,11,18,0.98)_74%,rgba(15,118,110,0.18))] px-6 py-6 shadow-[0_28px_80px_rgba(0,0,0,0.38)] sm:px-8 sm:py-7 lg:px-9 lg:py-8">
               <div className="grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-start xl:gap-9">
                 <div className="space-y-6">
@@ -587,7 +587,7 @@ export default function HomePage({ params }: HomePageProps) {
           </div>
         </section>
 
-        <section id="explore-by-island" className="section-space scroll-mt-36 space-y-8">
+        <section id="explore-by-island" className="section-anchor-offset section-space space-y-8 pt-3 sm:pt-4">
           <SectionHeading
             eyebrow={messages.home.destinations.eyebrow}
             title={messages.home.destinations.title}
@@ -898,7 +898,7 @@ export default function HomePage({ params }: HomePageProps) {
         {locale === "en" ? (
           <section
             id="official-collection"
-            className="section-space scroll-mt-36 space-y-7 pt-2 pb-6 sm:space-y-8 sm:pt-3 sm:pb-7"
+            className="section-anchor-offset section-space space-y-7 pt-4 pb-6 sm:space-y-8 sm:pt-5 sm:pb-7"
           >
             <div className="overflow-hidden rounded-[2.35rem] border border-white/12 bg-[linear-gradient(135deg,rgba(11,27,43,0.96),rgba(7,11,18,0.98)_42%,rgba(7,11,18,0.98)_76%,rgba(15,118,110,0.18))] px-6 py-6 shadow-[0_28px_80px_rgba(0,0,0,0.38)] sm:px-8 sm:py-7 lg:px-9 lg:py-8">
               <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-center xl:gap-9">
@@ -1041,7 +1041,7 @@ export default function HomePage({ params }: HomePageProps) {
           </div>
         </section>
 
-        <section id="inquiry-form" className="section-space scroll-mt-36">
+        <section id="inquiry-form" className="section-anchor-offset section-space pt-3 sm:pt-4">
           <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="soft-panel p-6 sm:p-8">
               <SectionHeading

@@ -8,7 +8,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 10.25rem;
+  scroll-padding-top: 11.5rem;
 }
 
 body {
@@ -27,7 +27,11 @@ a {
 }
 
 main [id] {
-  scroll-margin-top: 10.25rem;
+  scroll-margin-top: 11.5rem;
+}
+
+.section-anchor-offset {
+  scroll-margin-top: 11.5rem !important;
 }
 
 .page-shell {
@@ -202,6 +206,10 @@ main [id] {
   }
 
   main [id] {
-    scroll-margin-top: 8.75rem;
+    scroll-margin-top: 9.5rem;
+  }
+
+  .section-anchor-offset {
+    scroll-margin-top: 9.5rem !important;
   }
 }
