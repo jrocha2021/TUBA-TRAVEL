@@ -97,7 +97,7 @@ export default function HomePage({ params }: HomePageProps) {
     {
       title: "Partner Requests",
       description: "Hotels, guides, drivers, and local providers can request commercial partnerships with TubaTour.",
-      actionLabel: "Partner by WhatsApp",
+      actionLabel: "Partner With Us",
       href: createPartnerWhatsAppUrl("tourism partner")
     }
   ];
@@ -310,19 +310,19 @@ export default function HomePage({ params }: HomePageProps) {
         {locale === "en" ? (
           <section className="section-space scroll-mt-36">
             <div className="overflow-hidden rounded-[2.35rem] border border-white/12 bg-[linear-gradient(135deg,rgba(11,27,43,0.96),rgba(7,11,18,0.98)_42%,rgba(7,11,18,0.98)_74%,rgba(15,118,110,0.18))] px-6 py-6 shadow-[0_28px_80px_rgba(0,0,0,0.38)] sm:px-8 sm:py-7 lg:px-9 lg:py-8">
-              <div className="grid gap-7 lg:grid-cols-[0.92fr_1.08fr] lg:items-start xl:gap-8">
-                <div className="space-y-5">
+              <div className="grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-start xl:gap-9">
+                <div className="space-y-6">
                   <span className="brand-chip">World Cup travel guide</span>
-                  <div className="space-y-3">
-                    <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                  <div className="space-y-4">
+                    <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[2.65rem] lg:leading-[1.06]">
                       Cape Verde Is on the World Stage
                     </h2>
                     <p className="max-w-2xl text-base leading-7 text-brand-muted sm:text-lg sm:leading-8">
-                      From the Blue Sharks&apos; football moment to beaches, culture, mountains
-                      and music, now is the time to discover Cabo Verde.
+                      From the Blue Sharks&apos; football moment to beaches, culture, mountains,
+                      music, and island life — now is the time to discover Cabo Verde.
                     </p>
                   </div>
-                  <p className="max-w-xl text-sm leading-7 text-white/78 sm:text-base">
+                  <p className="max-w-xl text-sm leading-7 text-white/78 sm:text-base sm:leading-7">
                     TubaTour is ready to convert that global attention into real trip planning
                     with premium transfers, private tours, island experiences, and concierge-led
                     travel support.
@@ -345,14 +345,16 @@ export default function HomePage({ params }: HomePageProps) {
                   </div>
                 </div>
 
-                <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                  {launchOfferCards.map((item) => {
+                <div className="grid gap-4 md:grid-cols-2">
+                  {launchOfferCards.map((item, index) => {
                     const isExternal = item.href.startsWith("https://");
 
                     return (
                       <article
                         key={item.title}
-                        className="soft-panel flex h-full flex-col rounded-[1.8rem] p-5"
+                        className={`soft-panel flex h-full flex-col rounded-[1.8rem] p-5 ${
+                          index === launchOfferCards.length - 1 ? "md:col-span-2" : ""
+                        }`}
                       >
                         <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-gold">
                           Launch-ready service

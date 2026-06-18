@@ -150,14 +150,14 @@ export default function WorldCupCapeVerdePage({
   }
 
   return (
-    <div className="brand-page-shell space-y-10 rounded-[2.5rem] px-4 py-4 pb-8 sm:px-6 sm:py-6 lg:px-8">
-      <section className="section-space">
+    <div className="brand-page-shell space-y-9 rounded-[2.5rem] px-4 py-4 pb-8 sm:space-y-10 sm:px-6 sm:py-6 lg:px-8">
+      <section className="section-space scroll-mt-36">
         <div className="soft-panel overflow-hidden px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
-          <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
-            <div className="space-y-5">
+          <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-10">
+            <div className="space-y-6">
               <span className="brand-chip">Cape Verde on the world stage</span>
-              <div className="space-y-3">
-                <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[3.7rem] lg:leading-[1.02]">
+              <div className="space-y-4">
+                <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[3.55rem] lg:leading-[1.02]">
                   Cape Verde Is on the World Stage
                 </h1>
                 <p className="text-xl font-medium text-brand-sand">
@@ -165,9 +165,9 @@ export default function WorldCupCapeVerdePage({
                 </p>
                 <p className="max-w-2xl text-base leading-8 text-brand-muted sm:text-lg">
                   Cape Verde&apos;s football moment is introducing the islands to the world.
-                  TubaTour helps travelers discover authentic Cabo Verde experiences, airport
-                  transfers, private tours, beaches, culture, music, food, hiking, and
-                  island-hopping.
+                  TubaTour helps travelers discover airport transfers, private tours, beaches,
+                  culture, music, hiking, island-hopping, and concierge-style Cabo Verde travel
+                  support.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -218,7 +218,7 @@ export default function WorldCupCapeVerdePage({
         </div>
       </section>
 
-      <section className="section-space space-y-8">
+      <section className="section-space scroll-mt-36 space-y-8">
         <SectionHeading
           eyebrow="Why visit Cape Verde now?"
           title="A global spotlight moment with island depth behind it"
@@ -235,7 +235,7 @@ export default function WorldCupCapeVerdePage({
         </div>
       </section>
 
-      <section className="section-space space-y-8">
+      <section className="section-space scroll-mt-36 space-y-8">
         <SectionHeading
           eyebrow="Featured quick offers"
           title="Immediate travel offers built for lead generation and booking inquiries"
@@ -300,7 +300,7 @@ export default function WorldCupCapeVerdePage({
         </div>
       </section>
 
-      <section className="section-space">
+      <section className="section-space scroll-mt-36">
         <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(14,165,233,0.18),rgba(7,11,18,0.98)_34%,rgba(7,11,18,0.98)_70%,rgba(245,199,107,0.2))] px-6 py-8 text-white shadow-[0_24px_70px_rgba(0,0,0,0.4)] sm:px-8 lg:px-10">
           <div className="grid gap-7 lg:grid-cols-[1fr_auto] lg:items-end">
             <div className="max-w-3xl space-y-4">
