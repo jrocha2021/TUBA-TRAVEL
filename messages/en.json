@@ -492,8 +492,8 @@
     },
     "inquiry": {
       "eyebrow": "Start your inquiry",
-      "title": "Tell us what you want to book or plan",
-      "description": "Use the form below to request airport transfers, tours, food experiences, hotel support, Airbnb coordination, or a custom Cape Verde travel plan."
+      "title": "Request Your Cape Verde Trip Plan",
+      "description": "Tell us your travel dates, preferred island, number of travelers, and what you want to book. TubaTour will help you organize transfers, tours, local experiences, and island support."
     }
   },
   "destinations": {
@@ -777,6 +777,102 @@
             "tag": "Special itinerary"
           }
         }
+      },
+      "maio": {
+        "name": "Maio",
+        "badge": "Experiences for Maio",
+        "title": "Experiences arranged for Maio's quiet beaches, soft pace, and easy island escape",
+        "description": "Maio is best suited to travelers looking for peace, open shoreline, and simple island movement. The marketplace is expanding coverage here with calm stay support, light planning, and beach-oriented discovery.",
+        "emphasis": "Recommended for quiet beach stays, low-key discovery, and easy island planning",
+        "cardOrder": [
+          "airport-transfers",
+          "island-tours",
+          "local-food-experience",
+          "personalized-travel-planning",
+          "cultural-experiences"
+        ],
+        "cardOverrides": {
+          "island-tours": {
+            "description": "A lighter island outing built around Maio's openness, shoreline atmosphere, and simple scenic movement.",
+            "tag": "Easy island escape"
+          },
+          "cultural-experiences": {
+            "description": "A soft local layer for travelers who want a little more context while keeping the stay calm and beach-led.",
+            "tag": "Quiet local moments"
+          },
+          "airport-transfers": {
+            "description": "Helpful for keeping arrivals, departures, and beach-stay coordination simple as Maio marketplace coverage grows.",
+            "tag": "Smooth arrivals"
+          },
+          "personalized-travel-planning": {
+            "description": "Useful for shaping a relaxed Maio stay with just the right amount of structure and local support.",
+            "tag": "Calm planning"
+          }
+        }
+      },
+      "sao-nicolau": {
+        "name": "São Nicolau",
+        "badge": "Experiences for São Nicolau",
+        "title": "Experiences curated for São Nicolau's mountain scenery, villages, and slower discovery",
+        "description": "São Nicolau suits travelers who want scenic depth, village atmosphere, and a more grounded island rhythm. TubaTour is extending coverage here through route planning, local context, and thoughtful service discovery.",
+        "emphasis": "Recommended for scenic routes, village character, and slower island discovery",
+        "cardOrder": [
+          "island-tours",
+          "personalized-travel-planning",
+          "cultural-experiences",
+          "local-food-experience",
+          "airport-transfers"
+        ],
+        "cardOverrides": {
+          "island-tours": {
+            "description": "A scenic discovery layer designed around mountain roads, village stops, and São Nicolau's quieter island character.",
+            "tag": "Scenic island routes"
+          },
+          "cultural-experiences": {
+            "description": "A strong complement to the landscape, adding everyday local encounters and village-based cultural perspective.",
+            "tag": "Village culture"
+          },
+          "airport-transfers": {
+            "description": "Structured transfer support that helps keep a multi-stop or slower-paced São Nicolau itinerary feeling easy to manage.",
+            "tag": "Route support"
+          },
+          "personalized-travel-planning": {
+            "description": "Especially useful for connecting scenic priorities, route pacing, and overnight planning on São Nicolau.",
+            "tag": "Route planning"
+          }
+        }
+      },
+      "brava": {
+        "name": "Brava",
+        "badge": "Experiences for Brava",
+        "title": "Experiences designed for Brava's intimate scale, gardens, and quiet local charm",
+        "description": "Brava fits travelers who want a smaller-island feel, local texture, and gentle pacing. The marketplace is extending coverage here with curated support for quiet stays, local discovery, and tailored planning.",
+        "emphasis": "Recommended for gentle discovery, local charm, and smaller-island travel support",
+        "cardOrder": [
+          "cultural-experiences",
+          "island-tours",
+          "local-food-experience",
+          "personalized-travel-planning",
+          "airport-transfers"
+        ],
+        "cardOverrides": {
+          "island-tours": {
+            "description": "A softer discovery format that fits Brava's scale, viewpoints, and intimate island atmosphere.",
+            "tag": "Gentle island discovery"
+          },
+          "cultural-experiences": {
+            "description": "Especially well matched to Brava, where local stories, slower rhythms, and everyday island life shape the experience.",
+            "tag": "Local island charm"
+          },
+          "airport-transfers": {
+            "description": "Useful for coordinating arrivals and onward movement when Brava is part of a broader multi-island trip.",
+            "tag": "Arrival support"
+          },
+          "personalized-travel-planning": {
+            "description": "Valuable for travelers who want to fit Brava naturally into a tailored Cape Verde itinerary.",
+            "tag": "Tailored island fit"
+          }
+        }
       }
     },
     "ctaButton": "Book on WhatsApp"
@@ -957,7 +1053,7 @@
     "form": {
       "title": "Plan your Cabo Verde booking",
       "description": "Tell us your island, dates, group size, and the type of service you want so TubaTour can route your request into the right booking or partner workflow.",
-      "submitButton": "Send my inquiry",
+      "submitButton": "Send My Trip Request",
       "submittingButton": "Sending...",
       "successTitle": "Your inquiry has been received",
       "successDescription": "Thank you for contacting TubaTour. We have received your details and will follow up as soon as possible.",

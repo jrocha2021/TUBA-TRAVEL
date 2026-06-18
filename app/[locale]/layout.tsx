@@ -32,7 +32,7 @@ export default function LocaleLayout({
   return (
     <div className="page-shell">
       <Navbar locale={locale} messages={messages} />
-      <main className="flex-1 pb-36 pt-6 sm:pb-32 sm:pt-6 lg:pb-28 lg:pt-6.5">{children}</main>
+      <main className="flex-1 pb-40 pt-7 sm:pb-36 sm:pt-7 lg:pb-32 lg:pt-7.5">{children}</main>
       <Footer locale={locale as Locale} messages={messages} />
       <FloatingWhatsApp />
       <CookieBanner locale={locale as Locale} />
