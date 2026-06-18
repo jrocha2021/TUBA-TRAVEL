@@ -8,6 +8,7 @@ import { getMessages } from "@/lib/i18n";
 import { siteImages } from "@/lib/site-images";
 import {
   createPartnerWhatsAppUrl,
+  createTripPlanningWhatsAppUrl,
   createTravelerWhatsAppUrl,
   siteConfig
 } from "@/lib/site-config";
@@ -26,6 +27,79 @@ export default function HomePage({ params }: HomePageProps) {
     "Local guides",
     "Island experiences",
     "Booking-ready platform"
+  ];
+  const merchandiseItems = [
+    {
+      title: "TubaTour Premium T-Shirt",
+      image: "/images/merchandise/tubatour-premium-tshirt.jpeg",
+      description:
+        "Matte black official TubaTour travel tee designed for island explorers.",
+      imageClassName: "max-h-[13.4rem] brightness-[1.06] contrast-[1.03] sm:max-h-[14.4rem]"
+    },
+    {
+      title: "TubaTour Luxury Hoodie",
+      image: "/images/merchandise/tubatour-luxury-hoodie.jpeg",
+      description:
+        "Dark premium hoodie with TubaTour Cabo Verde Experiences branding and coastal wave accents.",
+      imageClassName: "max-h-[13.8rem] brightness-[1.07] contrast-[1.04] sm:max-h-[14.8rem]"
+    },
+    {
+      title: "TubaTour Full Tracksuit",
+      image: "/images/merchandise/tubatour-full-tracksuit.jpeg",
+      description:
+        "Deep navy full tracksuit designed for premium travel comfort and island lifestyle.",
+      imageClassName: "max-h-[14.6rem] brightness-[1.08] contrast-[1.03] sm:max-h-[15.8rem]"
+    },
+    {
+      title: "TubaTour Premium Cap",
+      image: "/images/merchandise/tubatour-premium-cap.jpeg",
+      description:
+        "Matte black curved-brim travel cap with embroidered TubaTour branding.",
+      imageClassName: "max-h-[12.75rem] brightness-[1.18] contrast-[1.08] saturate-[1.04] sm:max-h-[13.75rem]",
+      imageGlowClassName:
+        "bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.14),transparent_22%),radial-gradient(circle_at_48%_46%,rgba(245,199,107,0.12),transparent_28%)]"
+    },
+    {
+      title: "TubaTour Island Travel Shorts",
+      image: "/images/merchandise/tubatour-island-travel-shorts.jpeg",
+      description:
+        "Deep navy beach and travel shorts with turquoise wave accents and soft gold trim.",
+      imageClassName: "max-h-[13rem] brightness-[1.15] contrast-[1.06] saturate-[1.05] sm:max-h-[14rem]"
+    }
+  ];
+  const launchOfferCards = [
+    {
+      title: "Airport Transfers",
+      description: "Private pickup, hotel drop-off, and smooth airport support across key islands.",
+      actionLabel: "Request by WhatsApp",
+      href: `/${locale}/transfers`
+    },
+    {
+      title: "Private Tours",
+      description: "Custom island days with trusted local guides, culture stops, and scenic routes.",
+      actionLabel: "Plan a Tour",
+      href: createTripPlanningWhatsAppUrl(
+        "Hello TubaTour, I want to plan a Cape Verde trip. I am interested in a private tour. My dates are: ____. Island: ____. Number of travelers: ____."
+      )
+    },
+    {
+      title: "Island Experiences",
+      description: "Food, music, beach, and culture-led experiences designed around real Cabo Verde moments.",
+      actionLabel: "Explore Experiences",
+      href: `/${locale}/experiences`
+    },
+    {
+      title: "Trip Concierge",
+      description: "Combine transfers, tours, local support, and island-hopping through one travel team.",
+      actionLabel: "Plan My Trip",
+      href: createTripPlanningWhatsAppUrl()
+    },
+    {
+      title: "Partner Requests",
+      description: "Hotels, guides, drivers, and local providers can request commercial partnerships with TubaTour.",
+      actionLabel: "Partner by WhatsApp",
+      href: createPartnerWhatsAppUrl("tourism partner")
+    }
   ];
 
   return (
@@ -232,6 +306,88 @@ export default function HomePage({ params }: HomePageProps) {
             </div>
           </div>
         </section>
+
+        {locale === "en" ? (
+          <section className="section-space scroll-mt-36">
+            <div className="overflow-hidden rounded-[2.35rem] border border-white/12 bg-[linear-gradient(135deg,rgba(11,27,43,0.96),rgba(7,11,18,0.98)_42%,rgba(7,11,18,0.98)_74%,rgba(15,118,110,0.18))] px-6 py-6 shadow-[0_28px_80px_rgba(0,0,0,0.38)] sm:px-8 sm:py-7 lg:px-9 lg:py-8">
+              <div className="grid gap-7 lg:grid-cols-[0.92fr_1.08fr] lg:items-start xl:gap-8">
+                <div className="space-y-5">
+                  <span className="brand-chip">World Cup travel guide</span>
+                  <div className="space-y-3">
+                    <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                      Cape Verde Is on the World Stage
+                    </h2>
+                    <p className="max-w-2xl text-base leading-7 text-brand-muted sm:text-lg sm:leading-8">
+                      From the Blue Sharks&apos; football moment to beaches, culture, mountains
+                      and music, now is the time to discover Cabo Verde.
+                    </p>
+                  </div>
+                  <p className="max-w-xl text-sm leading-7 text-white/78 sm:text-base">
+                    TubaTour is ready to convert that global attention into real trip planning
+                    with premium transfers, private tours, island experiences, and concierge-led
+                    travel support.
+                  </p>
+                  <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                    <a
+                      href={siteConfig.whatsappPlanUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="brand-primary-button inline-flex items-center justify-center"
+                    >
+                      Plan My Trip
+                    </a>
+                    <Link
+                      href="/world-cup-cape-verde"
+                      className="brand-secondary-button inline-flex items-center justify-center"
+                    >
+                      Explore World Cup Travel Guide
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  {launchOfferCards.map((item) => {
+                    const isExternal = item.href.startsWith("https://");
+
+                    return (
+                      <article
+                        key={item.title}
+                        className="soft-panel flex h-full flex-col rounded-[1.8rem] p-5"
+                      >
+                        <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-gold">
+                          Launch-ready service
+                        </p>
+                        <h3 className="mt-3 text-xl font-semibold tracking-tight text-white">
+                          {item.title}
+                        </h3>
+                        <p className="mt-3 flex-1 text-sm leading-7 text-brand-muted">
+                          {item.description}
+                        </p>
+                        {isExternal ? (
+                          <a
+                            href={item.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="brand-secondary-button mt-5 inline-flex w-full justify-center"
+                          >
+                            {item.actionLabel}
+                          </a>
+                        ) : (
+                          <Link
+                            href={item.href}
+                            className="brand-secondary-button mt-5 inline-flex w-full justify-center"
+                          >
+                            {item.actionLabel}
+                          </Link>
+                        )}
+                      </article>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </section>
+        ) : null}
 
         <section id="transfers" className="section-space scroll-mt-36">
           <div className="overflow-hidden rounded-[2.35rem] border border-white/12 bg-[linear-gradient(135deg,rgba(11,27,43,0.92),rgba(7,11,18,0.96)_38%,rgba(7,11,18,0.98)_72%,rgba(15,118,110,0.24))] px-6 py-6 shadow-[0_28px_80px_rgba(0,0,0,0.38)] sm:px-8 sm:py-7 lg:px-9 lg:py-7">
@@ -736,6 +892,114 @@ export default function HomePage({ params }: HomePageProps) {
             ))}
           </div>
         </section>
+
+        {locale === "en" ? (
+          <section className="section-space space-y-7 pt-2 pb-6 sm:space-y-8 sm:pt-3 sm:pb-7">
+            <div className="overflow-hidden rounded-[2.35rem] border border-white/12 bg-[linear-gradient(135deg,rgba(11,27,43,0.96),rgba(7,11,18,0.98)_42%,rgba(7,11,18,0.98)_76%,rgba(15,118,110,0.18))] px-6 py-6 shadow-[0_28px_80px_rgba(0,0,0,0.38)] sm:px-8 sm:py-7 lg:px-9 lg:py-8">
+              <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-center xl:gap-9">
+                <div className="space-y-5">
+                  <span className="brand-chip">Coming Soon</span>
+                  <div className="space-y-3">
+                    <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                      TubaTour Official Collection
+                    </h2>
+                    <p className="max-w-xl text-base leading-7 text-brand-muted sm:text-lg sm:leading-8">
+                      Premium travel merchandise inspired by Cabo Verde island experiences.
+                    </p>
+                  </div>
+                  <p className="max-w-xl text-sm leading-7 text-white/75 sm:text-base">
+                    A curated branded collection for travelers who want to carry the TubaTour
+                    island aesthetic beyond the trip itself, from airport arrivals to beach days
+                    and relaxed island evenings.
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    {[
+                      "Premium travel wear",
+                      "Island-inspired details",
+                      "Future official release"
+                    ].map((item) => (
+                      <div
+                        key={item}
+                        className="rounded-full border border-white/12 bg-white/[0.06] px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-brand-gold backdrop-blur-md"
+                      >
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="relative overflow-hidden rounded-[2rem] border border-white/12 bg-[radial-gradient(circle_at_top_right,rgba(245,199,107,0.16),transparent_24%),radial-gradient(circle_at_bottom_left,rgba(14,165,233,0.16),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-3 shadow-[0_26px_70px_rgba(0,0,0,0.34)] sm:p-4">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-[1.65rem] border border-white/10 bg-black/20">
+                    <Image
+                      src="/images/merchandise/tubatour-official-collection-hero.jpeg"
+                      alt="TubaTour Official Collection hero merchandise preview"
+                      fill
+                      priority={false}
+                      className="object-cover object-center brightness-[1.08] saturate-[1.06]"
+                      sizes="(min-width: 1280px) 42vw, (min-width: 1024px) 46vw, 100vw"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 bg-[radial-gradient(circle_at_72%_26%,rgba(245,199,107,0.14),transparent_24%),radial-gradient(circle_at_24%_78%,rgba(14,165,233,0.12),transparent_24%),linear-gradient(180deg,rgba(7,11,18,0.04),rgba(7,11,18,0.18)_42%,rgba(7,11,18,0.48)_100%)]"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 xl:gap-6">
+              {merchandiseItems.map((item) => (
+                <article
+                  key={item.title}
+                  className="soft-panel flex h-full flex-col rounded-[1.9rem] p-4 sm:p-5"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-gold">
+                      Official collection
+                    </span>
+                    <span className="rounded-full border border-white/14 bg-white/8 px-3 py-1 text-[0.68rem] uppercase tracking-[0.18em] text-white/80">
+                      Coming soon
+                    </span>
+                  </div>
+                  <div className="relative mt-4 flex min-h-[13.75rem] items-center justify-center overflow-hidden rounded-[1.65rem] border border-white/10 bg-[radial-gradient(circle_at_22%_26%,rgba(14,165,233,0.15),transparent_26%),radial-gradient(circle_at_78%_78%,rgba(245,199,107,0.13),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-4 sm:mt-5 sm:min-h-[14.75rem] lg:min-h-[15rem]">
+                    <div
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(255,255,255,0.06),transparent_34%)]"
+                    />
+                    {"imageGlowClassName" in item && item.imageGlowClassName ? (
+                      <div
+                        aria-hidden="true"
+                        className={`pointer-events-none absolute inset-0 ${item.imageGlowClassName}`}
+                      />
+                    ) : null}
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={680}
+                      height={680}
+                      className={`${item.imageClassName} relative z-10 w-auto object-contain drop-shadow-[0_22px_34px_rgba(0,0,0,0.22)]`}
+                      sizes="(min-width: 1280px) 26vw, (min-width: 640px) 42vw, 92vw"
+                    />
+                  </div>
+                  <h3 className="mt-4 text-[1.65rem] font-semibold tracking-tight text-white sm:mt-5 sm:text-[1.78rem]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 flex-1 text-[0.98rem] leading-7 text-brand-muted">
+                    {item.description}
+                  </p>
+                  <div className="mt-5">
+                    <button
+                      type="button"
+                      className="brand-secondary-button inline-flex w-full justify-center"
+                    >
+                      Preview Collection
+                    </button>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <section className="section-space">
           <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(14,165,233,0.18),rgba(7,11,18,0.98)_34%,rgba(7,11,18,0.98)_70%,rgba(245,199,107,0.2))] px-6 py-8 text-white shadow-[0_24px_70px_rgba(0,0,0,0.4)] sm:px-8 lg:px-10">
