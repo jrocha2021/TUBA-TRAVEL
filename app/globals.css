@@ -26,7 +26,7 @@ a {
 }
 
 main [id] {
-  scroll-margin-top: 8rem;
+  scroll-margin-top: 9.25rem;
 }
 
 .page-shell {
@@ -201,6 +201,6 @@ main [id] {
   }
 
   main [id] {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: 8rem;
   }
 }

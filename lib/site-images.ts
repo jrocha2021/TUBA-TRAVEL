@@ -113,8 +113,8 @@ const caboVerdeImageLibrary = {
     alt: "A broader bay view over Mindelo that captures the seaside-city atmosphere of Sao Vicente"
   },
   boaVistaCalm: {
-    src: "https://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Chaves%20-%20Boa%20Vista.jpg",
-    alt: "A wide quiet beach with openness, pale sand, and calm escape energy suited to Boa Vista"
+    src: "/images/tubatour/destination-sal.jpg",
+    alt: "A bright beach and ocean scene used as a premium Boa Vista-style fallback for island escape visuals"
   },
   fogoVolcano: {
     src: "https://commons.wikimedia.org/wiki/Special:FilePath/Pico%20do%20Fogo%20Cape%20Verde.jpg",
@@ -256,6 +256,36 @@ export const siteImages = {
           "airport-transfers": caboVerdeImageLibrary.fogoVolcano,
           "local-food-experience": caboVerdeImageLibrary.santiagoCulture,
           "personalized-travel-planning": caboVerdeImageLibrary.fogoVolcano
+        }
+      },
+      maio: {
+        hero: caboVerdeImageLibrary.boaVistaCalm,
+        cards: {
+          "island-tours": caboVerdeImageLibrary.boaVistaCalm,
+          "cultural-experiences": caboVerdeImageLibrary.salVillage,
+          "airport-transfers": caboVerdeImageLibrary.boaVistaCalm,
+          "local-food-experience": caboVerdeImageLibrary.salVillage,
+          "personalized-travel-planning": caboVerdeImageLibrary.boaVistaCalm
+        }
+      },
+      "sao-nicolau": {
+        hero: caboVerdeImageLibrary.santoAntaoTrails,
+        cards: {
+          "island-tours": caboVerdeImageLibrary.santoAntaoTrails,
+          "cultural-experiences": caboVerdeImageLibrary.saoVicenteCultureHub,
+          "airport-transfers": caboVerdeImageLibrary.saoVicenteCoast,
+          "local-food-experience": caboVerdeImageLibrary.saoVicenteMarket,
+          "personalized-travel-planning": caboVerdeImageLibrary.santoAntaoTrails
+        }
+      },
+      brava: {
+        hero: caboVerdeImageLibrary.santiagoCulture,
+        cards: {
+          "island-tours": caboVerdeImageLibrary.santiagoCulture,
+          "cultural-experiences": caboVerdeImageLibrary.santiagoHeritage,
+          "airport-transfers": caboVerdeImageLibrary.santiagoLocalLife,
+          "local-food-experience": caboVerdeImageLibrary.santiagoCulture,
+          "personalized-travel-planning": caboVerdeImageLibrary.santiagoCity
         }
       }
     } as Record<IslandSlug, IslandExperienceImages>
